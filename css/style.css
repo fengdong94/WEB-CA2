@@ -1,0 +1,77 @@
+/*
+*** COMMON (for all pages) ***
+*/
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  flex: 1;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  box-shadow: 0 0 8px 0 rgb(143 155 179 / 80%);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #6a9c89;
+}
+header a {
+  font-size: 14px;
+  margin: 0 24px;
+  font-family: "Oswald-Regular";
+}
+header a.active {
+  color: #e10a26;
+}
+header > a {
+  display: block;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Oswald-SemiBold";
+  color: #e10a26;
+}
+header > a img {
+  width: 40px;
+  margin-right: 16px;
+}
+
+footer {
+  min-height: 96px;
+  max-height: 96px;
+  background: #ffa725;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+*** DONG (home-page, about-us) ***
+*/
+#home-page {
+  color: #ffa725;
+  color: #fff5e4;
+  color: #c1d8c3;
+  color: #6a9c89;
+}
+#about-us {
+}
+
+/*
+*** CAROLINA (xxx, xxx) ***
+*/
+
+/*
+*** LICIA (xxx, xxx) ***
+*/
