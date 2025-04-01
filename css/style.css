@@ -22,23 +22,22 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: #6a9c89;
+  background: #e69db8;
 }
 header a {
   font-size: 14px;
   margin: 0 24px;
-  font-family: "Oswald-Regular";
+  color: #fff;
 }
 header a.active {
-  color: #e10a26;
+  color: #000;
 }
 header > a {
   display: block;
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-family: "Oswald-SemiBold";
-  color: #e10a26;
+  color: #000;
 }
 header > a img {
   width: 40px;
@@ -48,7 +47,8 @@ header > a img {
 footer {
   min-height: 96px;
   max-height: 96px;
-  background: #ffa725;
+  background: #e69db8;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
