@@ -58,6 +58,14 @@ footer {
 *** DONG ***
 */
 #contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#contact .address {
+  padding: 40px 16px;
+  margin: 0;
+  background: #f1e7e7;
 }
 
 /*
