@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>homepage</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="utf-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Give+You+Glory&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <a href="index.html">
-        <!-- img reference: https://www.youtube.com/@SportsHubGameplay -->
-        <img src="images/logo.jpg" alt="This is a logo image" />
-        Ireland
+        <img src="images/logo.inverted.png" alt="This is a logo image" />
+        <h1>CakeZilla</h1>
+        <p>Cake That Feels Like Home</p>
       </a>
       <div>
         <a id="link-homepage" href="index.html">Home</a>
-        <a id="link-about" href="pages/about.html">About Us</a>
+        <a id="link-homepage" href="pages/vegan.html">Vegan</a>
+        <a id="link-aboutus" href="pages/about.html">About Us</a>
         <a id="link-contact" href="pages/contact.html">Contact</a>
       </div>
     </header>
-    <main id="home-page">
-      I am homepage
+    <main id="home">
       <div class="container text-center">
         <div class="row">
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-          <div class="col">Column</div>
+          <div class="prettyPie">
+            <img src="images/home/upper2.png" alt="featured pie" class="pie" />
+          </div>
+
+          <!--block 2-->
+          <div class="featureProd">
+            <h2>Feature Products</h2>
+            <img src="images/home/fp1.jpg" alt="featureProduct" class="fp1" />
+            <img src="images/home/fp2.jpg" alt="featureProduct" class="fp2" />
+            <img src="images/home/fp3.jpg" alt="featureProduct" class="fp3" />
+            <img src="images/home/fp4.jpg" alt="featureProduct" class="fp4" />
+          </div>
+          <!--block 3-->
+          <div class="customerFav"><h2>Customer fav</h2></div>
+          <!--block 4-->
+          <div class="veganAllergy"><h2>Vegan - Allergy Friendly</h2></div>
+          <!--block 5-->
+          <div class="reviews"><h2>Reviews</h2></div>
+          <!--block 6-->
+          <div class="contactUs"><h2>Contact Us!</h2></div>
         </div>
       </div>
     </main>

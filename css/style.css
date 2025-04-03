@@ -13,6 +13,19 @@ a {
   text-decoration: none;
 }
 
+/* TODO font & html link */
+h1 {
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,7 +35,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: #e69db8;
+  background: #ffd0c7;
 }
 header a {
   font-size: 14px;
@@ -71,6 +84,34 @@ footer {
 /*
 *** CAROLINA ***
 */
+#home .prettyPie,
+#vegan .prettyPie {
+  display: flex;
+  align-items: center;
+}
+#home .pie,
+#vegan .pie {
+  margin: 30px auto;
+  width: 50%;
+  height: auto;
+  display: flex;
+}
+
+#home .fp1,
+#home .fp2,
+#home .fp3,
+#home .fp4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: auto 12%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+}
 
 /*
 *** LICIA ***
