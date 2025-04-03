@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>Home Page</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <meta charset="utf-8" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,13 +14,21 @@
   </head>
 
   <body>
-    <header>
-      <a href="index.html">
-        <img src="images/logo.inverted.png" alt="This is a logo image" />
-        <h1>CakeZilla</h1>
-        <p>Cake That Feels Like Home</p>
-      </a>
-      <div>
+    <header
+      class="px-4 d-flex justify-content-between align-items-center py-2 position-sticky top-0 z-999"
+    >
+      <div class="d-flex align-items-center">
+        <a href="index.html" class="logo-brand d-flex align-items-center">
+          <img
+            src="images/logo.inverted.png"
+            class="logo"
+            alt="This is a logo image"
+          />
+          <span class="brand">CakeZilla</span>
+        </a>
+        <span class="slogan ms-4">Cake That Feels Like Home</span>
+      </div>
+      <div class="links">
         <a id="link-homepage" href="index.html">Home</a>
         <a id="link-vegan" href="pages/vegan.html">Vegan</a>
         <a id="link-aboutus" href="pages/about.html">About Us</a>

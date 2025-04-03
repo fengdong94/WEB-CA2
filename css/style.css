@@ -11,14 +11,11 @@ main {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 
 /* TODO font & html link */
-h1 {
-  font-family: "Beth Ellen", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+/* TODO redundant pics */
 p {
   font-family: "Give You Glory", cursive;
   font-weight: 400;
@@ -27,41 +24,55 @@ p {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
   box-shadow: 0 0 8px 0 rgb(143 155 179 / 80%);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: #ffd0c7;
+  background: #fff;
 }
-header a {
-  font-size: 14px;
-  margin: 0 24px;
-  color: #fff;
-}
-header a.active {
-  color: #000;
-}
-header > a {
-  display: block;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  color: #000;
-}
-header > a img {
-  width: 40px;
+header .logo {
+  width: 36px;
   margin-right: 16px;
+  transition: transform 0.6s;
+}
+header .logo-brand:hover .logo {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+header .brand {
+  font-family: "Beth Ellen", cursive;
+  font-size: 28px;
+}
+header .slogan {
+  font-family: "Give You Glory", cursive;
+  font-size: 18px;
+  position: relative;
+  top: 4px;
+}
+header .links a {
+  font-size: 14px;
+  margin-left: 32px;
+  position: relative;
+}
+header .links a.active {
+  color: #ffd0c7;
+}
+header .links a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  background: #ffd0c7;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.6s;
+}
+header .links a.active::before,
+header .links a:hover::before {
+  width: 100%;
 }
 
 footer {
   min-height: 96px;
   max-height: 96px;
-  background: #e69db8;
-  color: #fff;
+  background: #ffd0c7;
   display: flex;
   align-items: center;
   justify-content: center;
