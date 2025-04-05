@@ -16,12 +16,13 @@ a {
 
 /* TODO font & html link */
 /* TODO redundant pics */
+/* header */
 header {
   box-shadow: 0 0 8px 0 rgb(143 155 179 / 80%);
   background: #fff;
 }
 header .logo {
-  width: 36px;
+  width: 32px;
   margin-right: 16px;
   transition: transform 0.6s;
 }
@@ -30,16 +31,20 @@ header .logo-brand:hover .logo {
 }
 header .brand {
   font-family: "Beth Ellen", cursive;
-  font-size: 28px;
+  font-size: 24px;
 }
 header .slogan {
   font-family: "Give You Glory", cursive;
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   top: 4px;
 }
+header .game-img {
+  width: 24px;
+  cursor: pointer;
+}
 header .links a {
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 32px;
   position: relative;
 }
@@ -62,6 +67,38 @@ header .links a:hover::before {
   width: 100%;
 }
 
+/* popup */
+.popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+}
+.popup .popup-content {
+  position: relative;
+  background: #fff;
+  width: 60%;
+}
+.popup .popup-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.popup .popup-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+/* minigame */
+.gift-img {
+  width: 80px;
+  cursor: pointer;
+}
+
+/* footer */
 footer {
   min-height: 96px;
   max-height: 96px;
@@ -179,7 +216,6 @@ footer {
 
 #about .fav-title {
   text-align: center;
-  padding-top: ;
   margin-bottom: 24px;
 }
 

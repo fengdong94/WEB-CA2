@@ -1,6 +1,7 @@
 const contactForm = document.getElementById("contact-form");
 const nameField = document.getElementById("Name");
 const phoneField = document.getElementById("Phone");
+const termsPopup = document.getElementById("terms-popup");
 
 // javascript validation
 contactForm.addEventListener(
@@ -10,14 +11,14 @@ contactForm.addEventListener(
     event.stopPropagation();
 
     // validate name
-    var alphaExp = /^[a-zA-Z]+$/;
+    const alphaExp = /^[a-zA-Z]+$/;
     if (!nameField.value.match(alphaExp)) {
       alert("Please input only alphabets in name filed");
       nameField.focus();
       return;
     }
     // validate phone
-    var numericExpression = /^[0-9]+$/;
+    const numericExpression = /^[0-9]+$/;
     if (!phoneField.value.match(numericExpression)) {
       alert("Please input only numbers in phone filed");
       phoneField.focus();
@@ -35,6 +36,10 @@ contactForm.addEventListener(
   false
 );
 
+// manipulate the termsPopup
 function showTermsDetail() {
-  alert(1111);
+  termsPopup.style.visibility = "visible";
+}
+function closeTermsDetail() {
+  termsPopup.style.visibility = "hidden";
 }

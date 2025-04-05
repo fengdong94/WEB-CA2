@@ -26,7 +26,56 @@
           />
           <span class="brand">CakeZilla</span>
         </a>
-        <span class="slogan ms-4">Cake That Feels Like Home</span>
+        <span class="slogan mx-3">Cake That Feels Like Home</span>
+        <!-- Reference: https://www.iconfinder.com/icons/7717240/gift_box_present_ribbon_birthday_gifts_icon -->
+        <img
+          src="../images/gift_box.svg"
+          title="play a minigame to get the discount code"
+          alt="gift_box img"
+          class="game-img"
+          onclick="showMinigame()"
+        />
+        <div
+          id="minigame-popup"
+          class="popup d-flex justify-content-center align-items-center"
+        >
+          <div class="popup-content p-4">
+            <p class="text-center popup-title">
+              🎯 Guess which box has the cake!
+            </p>
+            <button
+              onclick="closeMinigame()"
+              type="button"
+              class="btn-close popup-close"
+            ></button>
+            <div class="row">
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(0)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(1)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(2)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="links">
         <a id="link-homepage" href="index.html">Home</a>
@@ -63,6 +112,6 @@
     </main>
     <footer>© 2025 CakeZilla. All rights reserved.</footer>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/menu-highlight.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
