@@ -16,13 +16,6 @@ a {
 
 /* TODO font & html link */
 /* TODO redundant pics */
-p {
-  font-family: "Give You Glory", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-}
-
 header {
   box-shadow: 0 0 8px 0 rgb(143 155 179 / 80%);
   background: #fff;
@@ -81,15 +74,22 @@ footer {
 /*
 *** DONG ***
 */
-#contact {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 #contact .address {
-  padding: 40px 16px;
   margin: 0;
   background: #f1e7e7;
+}
+#contact .icons img {
+  width: 32px;
+  margin-right: 8px;
+}
+#contact .terms-detail {
+  color: rgb(13, 110, 253);
+  cursor: pointer;
+  float: right;
+}
+#contact .submit-btn {
+  background: #ffd0c7;
+  width: 100%;
 }
 
 /*

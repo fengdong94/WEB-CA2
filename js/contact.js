@@ -1,18 +1,40 @@
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-const forms = document.querySelectorAll(".needs-validation");
+const contactForm = document.getElementById("contact-form");
+const nameField = document.getElementById("Name");
+const phoneField = document.getElementById("Phone");
 
-// Loop over them and prevent submission
-Array.from(forms).forEach((form) => {
-  form.addEventListener(
-    "submit",
-    (event) => {
-      if (!form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
+// javascript validation
+contactForm.addEventListener(
+  "submit",
+  (event) => {
+    event.preventDefault();
+    event.stopPropagation();
 
-      form.classList.add("was-validated");
-    },
-    false
-  );
-});
+    // validate name
+    var alphaExp = /^[a-zA-Z]+$/;
+    if (!nameField.value.match(alphaExp)) {
+      alert("Please input only alphabets in name filed");
+      nameField.focus();
+      return;
+    }
+    // validate phone
+    var numericExpression = /^[0-9]+$/;
+    if (!phoneField.value.match(numericExpression)) {
+      alert("Please input only numbers in phone filed");
+      phoneField.focus();
+      return;
+    }
+    // validate preference
+    if (phoneField.value.length < 7 || phoneField.value.length > 11) {
+      alert("Please input your phone between 7 and 11 characters");
+      phoneField.focus();
+      return;
+    }
+
+    alert("Form submitted successfully!");
+  },
+  false
+);
+
+function showTermsDetail() {
+  alert(1111);
+}
