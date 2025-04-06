@@ -1,3 +1,4 @@
+// @author Dong
 const contactForm = document.getElementById("contact-form");
 const nameField = document.getElementById("Name");
 const phoneField = document.getElementById("Phone");

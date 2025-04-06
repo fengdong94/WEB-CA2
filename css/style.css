@@ -76,6 +76,7 @@ header .links a:hover::before {
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   visibility: hidden;
+  z-index: 999;
 }
 .popup .popup-content {
   position: relative;
@@ -109,7 +110,7 @@ footer {
 }
 
 /*
-*** DONG ***
+*** @author DONG ***
 */
 #contact .address {
   margin: 0;
@@ -130,7 +131,7 @@ footer {
 }
 
 /*
-*** CAROLINA ***
+*** @author CAROLINA ***
 */
 #home .prettyPie,
 #vegan .prettyPie {
@@ -162,12 +163,89 @@ footer {
 }
 
 /*
-*** LICIA ***
+*** @author LICIA ***
 */
 #about .banner-img {
   max-width: 100%;
   height: auto;
 }
+
+#about .banner-img {
+  width: 100%;
+  background-color: #e69db8;
+  padding: 60px 0;
+  text-align: left;
+}
+
+#about .banner-text {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  padding: 24px;
+    font-family: 'Give You Glory';
+    font-size: medium;
+}
+
+
+#about .contact-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #de5d83;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+#about .contact-button:hover {
+  background-color: #fde0ea;
+}
+
+#about .intro-title {
+  text-align: center;
+  font-size: 28px;
+  color: #c45f7b;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  font-family: 'Give You Glory';
+  font-size: 36px;
+} 
+
+#about .intro-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #e69db8;
+  margin: 10px auto 0;
+  border-radius: 4px;
+  
+  
+}
+
+#about .intro-text {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+  padding: 0 12px;
+  margin-top: 12px;
+}
+
+#about .intro-text b {
+  color: #c45f7b;
+  font-weight: bold;
+}
+
+#about .slicecake-svg-icon {
+  width: 25px;
+  height: auto;
+  margin-left: 6px;
+  vertical-align: middle;
+} 
+
+
 #about .favorites-container,
 #about .intro-container,
 #about .whychoose-container {
@@ -179,15 +257,29 @@ footer {
 
 #about .why-choose-us {
   margin-top: 0;
-  padding-top: 2rem;
+  padding-top:0;
   background-color: #ffd0c7;
 }
 
-#about .whychoose-container h2 {
+#about .whychoose-title {
   text-align: center;
-  padding: 40px;
+  font-size: 28px;
+  color: #c45f7b;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'Give You Glory'; 
+  font-size: 36px;
+  padding-top: 24px;
 }
-
+#about .whychoose-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #e69db8;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
 #about .reason {
   display: flex;
   align-items: flex-start;
@@ -210,6 +302,24 @@ footer {
 }
 /* favorite section  */
 
+#about .fav-title {
+  text-align: center;
+  font-size: 28px;
+  color: #c45f7b;
+  margin-bottom: 24px;
+  font-family: 'Give You Glory';
+}
+
+#about .fav-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #e69db8;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
 #about .favorites {
   background-color: #f1e7e7;
 }
@@ -228,14 +338,14 @@ footer {
 }
 
 #about .dessert {
-  background-color: #e69db8;
+  background-color: #dfb0b0;
   width: 200px;
   border-radius: 16px;
   padding: 16px;
   transition: all 0.8s ease-in-out;
   transform: scale(0.9);
   z-index: 1;
-  box-shadow: 0 4px 12px #dfb0b0;
+  box-shadow: 0 4px 12px #D69ADE;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,7 +362,63 @@ footer {
 #about .dessert.select {
   transform: scale(1.1);
   background-color: #ffe3ec;
-  box-shadow: 0 10px 30px #e69db8;
+  box-shadow: 0 10px 30px palevioletred;
   z-index: 5;
   opacity: 1;
 }
+
+#about .cake-name {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'Give You Glory', cursive;
+}
+
+
+#about .view-more-container {
+  text-align: center;
+  margin-top: 24px;
+}
+
+#about .view-more-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: white;
+  color: #e69db8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 60px;
+}
+
+#about .view-more-button:hover {
+  background-color: #fde0ea;
+}
+
+.wave-container {
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.wave-svg,
+.wave-svg-top,
+.wave-svg-bottom{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin:0;
+  padding:0;
+}
+#about .why-choose-us{
+  margin-top: 0;
+  padding-top: 0;
+}
+
