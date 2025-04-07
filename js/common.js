@@ -11,6 +11,9 @@ if (location.pathname.endsWith("about.html")) {
 if (location.pathname.endsWith("contact.html")) {
   document.getElementById("link-contact").className = "active";
 }
+if (location.pathname.endsWith("faq.html")) {
+  document.getElementById("link-faq").className = "active";
+}
 
 // minigame
 const minigamePopup = document.getElementById("minigame-popup");

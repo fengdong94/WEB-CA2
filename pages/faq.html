@@ -1,10 +1,11 @@
+<!-- @author Dong -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,15 +13,14 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header
       class="px-4 d-flex justify-content-between align-items-center py-2 position-sticky top-0 z-999"
     >
       <div class="d-flex align-items-center">
-        <a href="index.html" class="logo-brand d-flex align-items-center">
+        <a href="../index.html" class="logo-brand d-flex align-items-center">
           <img
-            src="images/logo.inverted.png"
+            src="../images/logo.inverted.png"
             class="logo"
             alt="This is a logo image"
           />
@@ -78,41 +78,59 @@
         </div>
       </div>
       <div class="links">
-        <a id="link-homepage" href="index.html">Home</a>
-        <a id="link-vegan" href="pages/vegan.html">Vegan</a>
-        <a id="link-aboutus" href="pages/about.html">About Us</a>
-        <a id="link-contact" href="pages/contact.html">Contact</a>
-        <a id="link-faq" href="pages/faq.html">FAQ</a>
+        <a id="link-homepage" href="../index.html">Home</a>
+        <a id="link-vegan" href="vegan.html">Vegan</a>
+        <a id="link-about" href="about.html">About Us</a>
+        <a id="link-contact" href="contact.html">Contact</a>
+        <a id="link-faq" href="faq.html">FAQ</a>
       </div>
     </header>
-    <main id="home">
-      <div class="container text-center">
-        <div class="row">
-          <div class="prettyPie">
-            <img src="images/home/upper2.png" alt="featured pie" class="pie" />
-          </div>
-
-          <!--block 2-->
-          <div class="featureProd">
-            <h2>Feature Products</h2>
-            <img src="images/home/fp1.jpg" alt="featureProduct" class="fp1" />
-            <img src="images/home/fp2.jpg" alt="featureProduct" class="fp2" />
-            <img src="images/home/fp3.jpg" alt="featureProduct" class="fp3" />
-            <img src="images/home/fp4.jpg" alt="featureProduct" class="fp4" />
-          </div>
-          <!--block 3-->
-          <div class="customerFav"><h2>Customer fav</h2></div>
-          <!--block 4-->
-          <div class="veganAllergy"><h2>Vegan - Allergy Friendly</h2></div>
-          <!--block 5-->
-          <div class="reviews"><h2>Reviews</h2></div>
-          <!--block 6-->
-          <div class="contactUs"><h2>Contact Us!</h2></div>
-        </div>
+    <main id="faq" class="container my-4">
+      <!-- TODO banner with text 'Frequently asked questions' -->
+      <!-- Click buttons to filter FAQ list -->
+      <div class="text-center">
+        <button
+          id="ordering"
+          onclick="filterFAQ('ordering')"
+          type="button"
+          class="btn filter-btn"
+        >
+          ordering
+        </button>
+        <button
+          id="products"
+          onclick="filterFAQ('products')"
+          type="button"
+          class="btn filter-btn"
+        >
+          products
+        </button>
+        <button
+          id="store"
+          onclick="filterFAQ('store')"
+          type="button"
+          class="btn filter-btn"
+        >
+          store
+        </button>
+        <button
+          id="delivery"
+          onclick="filterFAQ('delivery')"
+          type="button"
+          class="btn filter-btn"
+        >
+          delivery
+        </button>
       </div>
+      <div class="accordion accordion-flush my-3" id="questions"></div>
+      Can't find what you're looking for?
+      <a href="contact.html" type="button" class="btn contact-btn"
+        >Contact Us</a
+      >
     </main>
     <footer>© 2025 CakeZilla. All rights reserved.</footer>
-    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/common.js"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/faq.js"></script>
   </body>
 </html>

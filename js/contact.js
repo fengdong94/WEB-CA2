@@ -7,7 +7,7 @@ const termsPopup = document.getElementById("terms-popup");
 // javascript validation
 contactForm.addEventListener(
   "submit",
-  (event) => {
+  function (event) {
     event.preventDefault();
     event.stopPropagation();
 
@@ -25,7 +25,6 @@ contactForm.addEventListener(
       phoneField.focus();
       return;
     }
-    // validate preference
     if (phoneField.value.length < 7 || phoneField.value.length > 11) {
       alert("Please input your phone between 7 and 11 characters");
       phoneField.focus();
