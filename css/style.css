@@ -147,33 +147,19 @@ footer {
 /*
 *** @author CAROLINA ***
 */
-#home .prettyPie,
-#vegan .prettyPie {
-  display: flex;
-  align-items: center;
-}
-#home .pie,
-#vegan .pie {
-  margin: 30px auto;
-  width: 50%;
-  height: auto;
-  display: flex;
+#home .banner {
+  width: 100%;
+  align-items: right;
+  justify-items: right;
+  background-color: #dfb0b0;
 }
 
-#home .fp1,
-#home .fp2,
-#home .fp3,
-#home .fp4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  margin: auto 12%;
-  height: auto;
-  display: block;
-  transition: opacity 0.3s ease;
-  border-radius: 5px;
+#vegan p {
+  font-size: 40px;
+}
+
+#vegan .pie {
+  width: 100%;
 }
 
 /*
