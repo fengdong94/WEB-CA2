@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact</title>
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
@@ -16,7 +16,7 @@
   </head>
   <body>
     <header
-      class="px-4 d-flex justify-content-between align-items-center py-2 position-sticky top-0 z-999"
+      class="px-4 d-flex justify-content-between align-items-center py-2 position-sticky top-0"
     >
       <div class="d-flex align-items-center">
         <a href="../index.html" class="logo-brand d-flex align-items-center">
@@ -81,9 +81,9 @@
       <div class="links">
         <a id="link-homepage" href="../index.html">Home</a>
         <a id="link-vegan" href="vegan.html">Vegan</a>
+        <a id="link-recipe" href="recipe.html">Recipe</a>
         <a id="link-about" href="about.html">About Us</a>
         <a id="link-contact" href="contact.html">Contact</a>
-        <a id="link-faq" href="faq.html">FAQ</a>
       </div>
     </header>
     <main id="contact" class="container my-4">
@@ -286,6 +286,30 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="faq mt-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <h3>FAQ</h3>
+          <div class="d-flex tabs">
+            <div
+              id="ordering"
+              onclick="filterFAQ('ordering')"
+              class="tab me-4 active"
+            >
+              ordering
+            </div>
+            <div id="products" onclick="filterFAQ('products')" class="tab me-4">
+              products
+            </div>
+            <div id="store" onclick="filterFAQ('store')" class="tab me-4">
+              store
+            </div>
+            <div id="delivery" onclick="filterFAQ('delivery')" class="tab me-4">
+              delivery
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush my-3" id="questions"></div>
       </div>
     </main>
     <footer>© 2025 CakeZilla. All rights reserved.</footer>

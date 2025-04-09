@@ -1,0 +1,511 @@
+<!-- @author Dong -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>recipe</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header
+      class="px-4 d-flex justify-content-between align-items-center py-2 position-sticky top-0"
+    >
+      <div class="d-flex align-items-center">
+        <a href="../index.html" class="logo-brand d-flex align-items-center">
+          <img
+            src="../images/logo.inverted.png"
+            class="logo"
+            alt="This is a logo image"
+          />
+          <span class="brand">CakeZilla</span>
+        </a>
+        <span class="slogan mx-3">Cake That Feels Like Home</span>
+        <!-- Reference: https://www.iconfinder.com/icons/7717240/gift_box_present_ribbon_birthday_gifts_icon -->
+        <img
+          src="../images/gift_box.svg"
+          title="play a minigame to get the discount code"
+          alt="gift_box img"
+          class="game-img"
+          onclick="showMinigame()"
+        />
+        <div
+          id="minigame-popup"
+          class="popup d-flex justify-content-center align-items-center"
+        >
+          <div class="popup-content p-4">
+            <p class="text-center popup-title">
+              🎯 Guess which box has the cake!
+            </p>
+            <button
+              onclick="closeMinigame()"
+              type="button"
+              class="btn-close popup-close"
+            ></button>
+            <div class="row">
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(0)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(1)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(2)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a id="link-homepage" href="../index.html">Home</a>
+        <a id="link-vegan" href="vegan.html">Vegan</a>
+        <a id="link-recipe" href="recipe.html">Recipe</a>
+        <a id="link-about" href="about.html">About Us</a>
+        <a id="link-contact" href="contact.html">Contact</a>
+      </div>
+    </header>
+    <main id="recipe" class="container my-4">
+      <!-- TODO banner -->
+      <h3 class="mb-3">Quick sticky toffee puddings</h3>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <!-- Reference: https://www.krumpli.co.uk/sticky-toffee-pudding/ -->
+          <img
+            src="../images/recipe/quick-sticky-toffee-puddings.webp"
+            alt="quick-sticky-toffee-puddings img"
+            class="img-fluid rounded-4"
+          />
+          <div class="summary d-flex justify-content-center mt-3">
+            <div class="d-flex me-5">
+              <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
+              <img
+                src="../images/recipe/clock-time.svg"
+                alt="clock-time img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>PREP TIME</div>
+                <div>5 Minutes</div>
+              </div>
+            </div>
+            <div class="d-flex me-5">
+              <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
+              <img
+                src="../images/recipe/clock-time.svg"
+                alt="clock-time img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>COOK TIME</div>
+                <div>10 Minutes</div>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img
+                src="../images/recipe/fork-knife.svg"
+                alt="fork-knife img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>
+                  <div>SERVES</div>
+                  <div>4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 rounded-4 ingredients-nutrition p-3">
+          <div class="d-flex mb-2">
+            <div
+              id="ingredientsTab0"
+              onclick="showIngredients(0)"
+              class="active tab me-4"
+            >
+              Ingredients
+            </div>
+            <div id="nutritionTab0" onclick="showNutrition(0)" class="tab">
+              Nutrition
+            </div>
+          </div>
+          <div id="ingredients0" class="lists">
+            <div class="d-flex justify-content-between py-2">
+              <div>large chocolate muffins (crumbled)</div>
+              <div>4</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>large sultanas</div>
+              <div>50g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>small knob of butter</div>
+              <div>1</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>light muscovado sugar</div>
+              <div>50g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>butter</div>
+              <div>50g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>double cream</div>
+              <div>75ml</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>vanilla ice cream</div>
+              <div>4 scoops</div>
+            </div>
+          </div>
+          <div id="nutrition0" class="lists nutrition">
+            <div class="d-flex justify-content-between py-2">
+              <div>kcal</div>
+              <div>555</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>fat</div>
+              <div>35g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>saturates</div>
+              <div>20g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>carbs</div>
+              <div>59g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>sugars</div>
+              <div>42g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>fiber</div>
+              <div>1g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>protein</div>
+              <div>5g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>salt</div>
+              <div>0.66g</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h5 class="mb-3">Instructions</h5>
+        <div class="mb-3">
+          <h6>Step1</h6>
+          Heat oven to 200C/180C fan/gas 6. Mix the muffins with the sultanas.
+          Divide between 4 buttered ramekins or one baking dish. Cover with foil
+          and bake for 8 mins until just warmed through.
+        </div>
+        <div>
+          <h6>Step2</h6>
+          Meanwhile, place the sugar, butter and cream in a small pan and gently
+          heat together, stirring until the sugar dissolves. Pour the sauce over
+          the muffin mixture and serve warm with ice cream.
+        </div>
+      </div>
+      <h3 class="mt-4 mb-3">Easy cheesecake</h3>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <!-- Reference: https://www.bettycrocker.com/menus-holidays-parties/mhplibrary/recipes/impossibly-easy-desserts -->
+          <img
+            src="../images/recipe/easy-cheesecake.jpg"
+            alt="easy-cheesecake img"
+            class="img-fluid rounded-4"
+          />
+          <div class="summary d-flex justify-content-center mt-3">
+            <div class="d-flex me-5">
+              <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
+              <img
+                src="../images/recipe/clock-time.svg"
+                alt="clock-time img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>PREP TIME</div>
+                <div>15 Minutes</div>
+              </div>
+            </div>
+            <div class="d-flex me-5">
+              <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
+              <img
+                src="../images/recipe/clock-time.svg"
+                alt="clock-time img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>COOK TIME</div>
+                <div>none</div>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img
+                src="../images/recipe/fork-knife.svg"
+                alt="fork-knife img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>
+                  <div>SERVES</div>
+                  <div>2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 rounded-4 ingredients-nutrition p-3">
+          <div class="d-flex mb-2">
+            <div
+              id="ingredientsTab1"
+              onclick="showIngredients(1)"
+              class="active tab me-4"
+            >
+              Ingredients
+            </div>
+            <div id="nutritionTab1" onclick="showNutrition(1)" class="tab">
+              Nutrition
+            </div>
+          </div>
+          <div id="ingredients1" class="lists">
+            <div class="d-flex justify-content-between py-2">
+              <div>shortbread biscuits</div>
+              <div>4</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>tub soft cheese</div>
+              <div>300g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>zest and juice of lime</div>
+              <div>1</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>icing sugar</div>
+              <div>3 tbsp</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>frozen mixed berries</div>
+              <div>380g</div>
+            </div>
+          </div>
+          <div id="nutrition1" class="lists nutrition">
+            <div class="d-flex justify-content-between py-2">
+              <div>kcal</div>
+              <div>681</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>fat</div>
+              <div>48g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>saturates</div>
+              <div>35g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>carbs</div>
+              <div>55g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>sugars</div>
+              <div>35g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>fiber</div>
+              <div>4g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>protein</div>
+              <div>12g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>salt</div>
+              <div>1.85g</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h5 class="mb-3">Instructions</h5>
+        <div class="mb-3">
+          <h6>Step1</h6>
+          Put the shortbread biscuits into a plastic bag and bash with a rolling
+          pin until broken. Divide between two dessert glasses. Beat together
+          the soft cheese with the zest of a lime and 2 tbsp icing sugar until
+          smooth. Put this on top of each biscuit base and smooth out with the
+          back of a spoon.
+        </div>
+        <div>
+          <h6>Step2</h6>
+          Take the mixed frozen berries, defrost and blend half with 1 tbsp
+          icing sugar and the juice of the lime. Pour this on top of each
+          cheesecake and scatter with a few extra whole berries. Serve or sit in
+          the fridge for a few hours before serving.
+        </div>
+      </div>
+      <h3 class="mt-4 mb-3">Lemon syllabub</h3>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <!-- Reference: https://queenketo.com/sugar-free-lemon-prosecco-syllabub/ -->
+          <img
+            src="../images/recipe/lemon-syllabub.jpg"
+            alt="easy-cheesecake img"
+            class="img-fluid rounded-4"
+          />
+          <div class="summary d-flex justify-content-center mt-3">
+            <div class="d-flex me-5">
+              <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
+              <img
+                src="../images/recipe/clock-time.svg"
+                alt="clock-time img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>PREP TIME</div>
+                <div>10 Minutes</div>
+              </div>
+            </div>
+            <div class="d-flex me-5">
+              <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
+              <img
+                src="../images/recipe/clock-time.svg"
+                alt="clock-time img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>COOK TIME</div>
+                <div>none</div>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img
+                src="../images/recipe/fork-knife.svg"
+                alt="fork-knife img"
+                class="icon"
+              />
+              <div class="text-center">
+                <div>
+                  <div>SERVES</div>
+                  <div>4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 rounded-4 ingredients-nutrition p-3">
+          <div class="d-flex mb-2">
+            <div
+              id="ingredientsTab2"
+              onclick="showIngredients(2)"
+              class="active tab me-4"
+            >
+              Ingredients
+            </div>
+            <div id="nutritionTab2" onclick="showNutrition(2)" class="tab">
+              Nutrition
+            </div>
+          </div>
+          <div id="ingredients2" class="lists">
+            <div class="d-flex justify-content-between py-2">
+              <div>whipping cream</div>
+              <div>284ml</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>caster sugar</div>
+              <div>50g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>white wine</div>
+              <div>50ml</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>zest and juice</div>
+              <div>1/2 lemon</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>almond thins or berries</div>
+              <div>to serve</div>
+            </div>
+          </div>
+          <div id="nutrition2" class="lists nutrition">
+            <div class="d-flex justify-content-between py-2">
+              <div>kcal</div>
+              <div>329</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>fat</div>
+              <div>29g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>saturates</div>
+              <div>18g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>carbs</div>
+              <div>15g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>sugars</div>
+              <div>15g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>fiber</div>
+              <div>0g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>protein</div>
+              <div>2g</div>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <div>salt</div>
+              <div>0.05g</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h5 class="mb-3">Instructions</h5>
+        <div class="mb-3">
+          <h6>Step1</h6>
+          Put the shortbread biscuits into a plastic bag and bash with a rolling
+          pin until broken. Divide between two dessert glasses. Beat together
+          the soft cheese with the zest of a lime and 2 tbsp icing sugar until
+          smooth. Put this on top of each biscuit base and smooth out with the
+          back of a spoon.
+        </div>
+        <div>
+          <h6>Step2</h6>
+          Take the mixed frozen berries, defrost and blend half with 1 tbsp
+          icing sugar and the juice of the lime. Pour this on top of each
+          cheesecake and scatter with a few extra whole berries. Serve or sit in
+          the fridge for a few hours before serving.
+        </div>
+      </div>
+    </main>
+    <footer>© 2025 CakeZilla. All rights reserved.</footer>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/recipe.js"></script>
+  </body>
+</html>

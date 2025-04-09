@@ -5,14 +5,14 @@ if (location.pathname.endsWith("index.html")) {
 if (location.pathname.endsWith("vegan.html")) {
   document.getElementById("link-vegan").className = "active";
 }
+if (location.pathname.endsWith("recipe.html")) {
+  document.getElementById("link-recipe").className = "active";
+}
 if (location.pathname.endsWith("about.html")) {
   document.getElementById("link-about").className = "active";
 }
 if (location.pathname.endsWith("contact.html")) {
   document.getElementById("link-contact").className = "active";
-}
-if (location.pathname.endsWith("faq.html")) {
-  document.getElementById("link-faq").className = "active";
 }
 
 // minigame
