@@ -206,9 +206,53 @@ footer {
   width: 100%;
   align-items: right;
   justify-items: right;
-  background-color: #dfb0b0;
+  background-color: white;
+}
+#home .c1Todo {
+  display: flex;
+  justify-content: center;
+  gap: 0%;
 }
 
+#home .title1 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+#home .oneWordT {
+  font-family: "Beth Ellen", cursive;
+  color: #c45f7b;
+}
+
+#home .titleDescription {
+  font-size: 45px;
+  align-items: center;
+  justify-content: center;
+}
+#home .subtitleHome {
+  font-family: "Give You Glory", cursive;
+  font-size: 30px;
+  color: #c45f7b;
+  text-align: center;
+}
+
+#home .veganAllergy,
+.contactUs {
+  font-size: 24px;
+}
+
+#home .review {
+  background-color: #f1e7e7;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+#home .reviews {
+  font-size: 20px;
+}
 #vegan p {
   font-size: 40px;
 }
