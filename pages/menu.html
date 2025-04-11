@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Give+You+Glory&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header
+      class="px-4 d-flex justify-content-between align-items-center py-2 position-sticky top-0"
+    >
+      <div class="d-flex align-items-center">
+        <a href="../index.html" class="logo-brand d-flex align-items-center">
+          <img
+            src="../images/logo.inverted.png"
+            class="logo"
+            alt="This is a logo image"
+          />
+          <span class="brand">CakeZilla</span>
+        </a>
+        <span class="slogan mx-3">Cake That Feels Like Home</span>
+        <!-- Reference: https://www.iconfinder.com/icons/7717240/gift_box_present_ribbon_birthday_gifts_icon -->
+        <img
+          src="../images/gift_box.svg"
+          title="play a minigame to get the discount code"
+          alt="gift_box img"
+          class="game-img"
+          onclick="showMinigame()"
+        />
+        <div
+          id="minigame-popup"
+          class="popup d-flex justify-content-center align-items-center"
+        >
+          <div class="popup-content p-4">
+            <p class="text-center popup-title">
+              🎯 Guess which box has the cake!
+            </p>
+            <button
+              onclick="closeMinigame()"
+              type="button"
+              class="btn-close popup-close"
+            ></button>
+            <div class="row">
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(0)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(1)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  onclick="guessCake(2)"
+                  src="../images/gift_box.svg"
+                  alt="cake img"
+                  class="gift-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a id="link-homepage" href="../index.html">Home</a>
+        <a id="link-vegan" href="vegan.html">Vegan</a>
+        <a id="link-menu" href="menu.html">Menu</a>
+        <a id="link-about" href="about.html">About Us</a>
+        <a id="link-recipe" href="recipe.html">Recipe</a>
+        <a id="link-contact" href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main id="menu">
+        <!-- THIS IS MY BANNER -->
+<section class="banner-img">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="banner-text">
+                    <h1>Where desserts become dreams</h1>
+                    <p>Made with butter, sugar and a sprinkle of love</p>
+                    <button id="contactButton" class="contact-button">Contact Us</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+    <img src="../images/menu/Banner (2).png" alt="banner" class="img-fluid banner-img" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="gallery-section">
+    <div class="container">
+    <h2 class="text-center gallery-title my-4">Our Desserts</h2>
+
+    <!-- MAIN GALLERY -->
+    <div class="row" id="dessert-gallery">
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/ApplePie-min.jpg" class="card-img-top" alt="Apple Pie">
+                <div class="card-body">
+                    <h5 class="card-title">Apple Pie</h5>
+                    <p class="card-text">Just like Grandma used to make.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/brazilianPudding-min.jpg" class="card-img-top" alt="Brazilian Pudding">
+                <div class="card-body">
+                    <h5 class="card-title">Brazilian Pudding</h5>
+                    <p class="card-text">Creamy, golden and oh-so-sweet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/BlueberryPudding-min.jpg" class="card-img-top" alt="Blueberry Pudding">
+                <div class="card-body">
+                    <h5 class="card-title">Blueberry Pudding</h5>
+                    <p class="card-text">Bursting with berry goodness!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/BrazilianManjar-min.jpg" class="card-img-top" alt="Brazilian Manjar">
+                <div class="card-body">
+                    <h5 class="card-title">Brazilian Manjar</h5>
+                    <p class="card-text">A tropical coconut dream.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/ChocolateMousse-min.jpg" class="card-img-top" alt="Chocolate Mousse">
+                <div class="card-body">
+                    <h5 class="card-title">Chocolate Mousse</h5>
+                    <p class="card-text">Light, airy, and rich in chocolate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/RedVelvetCake-min.jpg" class="card-img-top" alt="Red Velvet Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Red Velvet Cake</h5>
+                    <p class="card-text">A classic, rich and red delight!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/NakeCake-min.jpg" class="card-img-top" alt="Naked Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Naked Cake</h5>
+                    <p class="card-text">Simplicity never looked so sweet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/raspeberryTart-min.jpg" class="card-img-top" alt="Raspberry Tart">
+                <div class="card-body">
+                    <h5 class="card-title">Raspberry Tart</h5>
+                    <p class="card-text">Tangy, sweet, and tart-tastic!</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/Brigadeiro-min.jpg" class="card-img-top" alt="Brigadeiro">
+                <div class="card-body">
+                    <h5 class="card-title">Brigadeiro</h5>
+                    <p class="card-text">The Brazilian fudge ball of dreams.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- HIDDEN IMAGES -->
+    <div class="row d-none" id="extra-gallery">
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/CaramelCheesecake-min.jpg" class="card-img-top" alt="Caramel Cheesecake">
+                <div class="card-body">
+                    <h5 class="card-title">Caramel Cheesecake</h5>
+                    <p class="card-text">Creamy with a drizzle of gold.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/CherryChocCupcake-min.jpg" class="card-img-top" alt="Cherry Choc Cupcake">
+                <div class="card-body">
+                    <h5 class="card-title">Cherry Choc Cupcake</h5>
+                    <p class="card-text">When cherry kisses chocolate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/Doughnut-min.jpg" class="card-img-top" alt="Doughnut">
+                <div class="card-body">
+                    <h5 class="card-title">Doughnut</h5>
+                    <p class="card-text">Round joy with sprinkles on top!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/LemonPie (2)-min.jpg" class="card-img-top" alt="Lemon Pie">
+                <div class="card-body">
+                    <h5 class="card-title">Lemon Pie</h5>
+                    <p class="card-text">Zesty, fluffy, citrusy love.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/Oreo Cake-min.jpg" class="card-img-top" alt="Oreo Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Oreo Cake</h5>
+                    <p class="card-text">Cookies meet cake. It’s a match!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/passionFruit.jpg" class="card-img-top" alt="Passion Fruit Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Passion Fruit Cake</h5>
+                    <p class="card-text">Sweet, tangy, tropical vibes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/OrangeCake-min.jpg" class="card-img-top" alt="Orange Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Orange Cake</h5>
+                    <p class="card-text">A sunshine slice on your plate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card dessert-card">
+                <img src="../images/menu/BerriesCheesecake-min.jpg" class="card-img-top" alt="Berries Cheesecake">
+                <div class="card-body">
+                    <h5 class="card-title">Berries Cheesecake</h5>
+                    <p class="card-text">Berries and cream in harmony.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- BUTTONS -->
+    <div class="text-center">
+        <button id="showMoreBtn" class="btn btn-outline-dark mt-3">View More</button>
+        <button id="showLessBtn" class="btn btn-outline-dark mt-3 d-none">View Less</button>
+    </div>
+</div>
+</section>
+        
+
+<!-- VEGAN HIGHLIGHT -->
+        <section class=" vegan-highlight-section">
+            <div class=" veganSection-container">
+                <h2 class=" vegan-title text-center"> Go Vegan!</h2>
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <img src="../images/menu/vegansection.png" alt="vegan desserts" class="img-fluid vegan-img">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="vegan-text">
+                            Whether your vegan, vegetarian or lactose intolerant, <br>
+                             we've got you covered!
+                            Our special Vegan section is filled <br>
+                             with dreamy desserts made just for you - full of
+                            flavor,<br> love and zero worries.
+                        </p>
+                        <!-- GOES TO VEGAN PAGE  -->
+                        <div class="goVegan-container">
+                            <button id="veganButton" class="veganButton">
+                              Explore vegan desserts
+                            </button>
+                        </div>
+                        
+                        
+                        
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- LIGHTBOX FOR THE GALLERY  -->
+    </main>
+    <<div id="lightbox" class="d-flex d-none">
+  <span id="lightbox-close">&times;</span>
+  <div class="text-center">
+    <img id="lightbox-img" src="" alt="" class="img-fluid rounded mb-3">
+    <h5 id="lightbox-title" class="text-center"></h5>
+    <p id="lightbox-text" class="text-center"></p>
+  </div>
+</div>
+    </div>
+
+
+    <footer>© 2025 CakeZilla. All rights reserved.</footer>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+
+</body>
+
+</html>
