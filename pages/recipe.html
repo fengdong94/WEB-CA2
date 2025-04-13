@@ -22,594 +22,606 @@
           <span class="brand">CakeZilla</span>
         </a>
         <span class="slogan mx-3">Cake That Feels Like Home</span>
-        <!-- Reference: https://www.iconfinder.com/icons/7717240/gift_box_present_ribbon_birthday_gifts_icon -->
-        <img
-          src="../images/gift_box.svg"
-          title="play a minigame to get the discount code"
-          alt="gift_box img"
-          class="game-img"
-          onclick="showMinigame()"
-        />
-        <div
-          id="minigame-popup"
-          class="popup d-flex justify-content-center align-items-center"
-        >
-          <div class="popup-content p-4">
-            <p class="text-center popup-title">
-              🎯 Guess which box has the cake!
-            </p>
-            <button
-              onclick="closeMinigame()"
-              type="button"
-              class="btn-close popup-close"
-            ></button>
-            <div class="row">
-              <div class="col text-center">
-                <img
-                  onclick="guessCake(0)"
-                  src="../images/gift_box.svg"
-                  alt="cake img"
-                  class="gift-img"
-                />
-              </div>
-              <div class="col text-center">
-                <img
-                  onclick="guessCake(1)"
-                  src="../images/gift_box.svg"
-                  alt="cake img"
-                  class="gift-img"
-                />
-              </div>
-              <div class="col text-center">
-                <img
-                  onclick="guessCake(2)"
-                  src="../images/gift_box.svg"
-                  alt="cake img"
-                  class="gift-img"
-                />
-              </div>
-            </div>
+      </div>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <div class="navbar-brand"></div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse links" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="link-homepage" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-vegan" href="vegan.html">Vegan</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-menu" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-about" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-recipe" href="recipe.html">Recipe</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-contact" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="links">
-        <a id="link-homepage" href="../index.html">Home</a>
-        <a id="link-vegan" href="vegan.html">Vegan</a>
-        <a id="link-menu" href="menu.html">Menu</a>
-        <a id="link-about" href="about.html">About Us</a>
-        <a id="link-recipe" href="recipe.html">Recipe</a>
-        <a id="link-contact" href="contact.html">Contact</a>
-      </div>
+      </nav>
     </header>
-    <main id="recipe" class="container my-4">
-      <!-- TODO banner -->
-      <h3 class="mb-3">Today's recipe</h3>
-      <h5 class="mb-3">Quick sticky toffee puddings</h5>
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <!-- Reference: https://www.krumpli.co.uk/sticky-toffee-pudding/ -->
-          <img
-            src="../images/recipe/quick-sticky-toffee-puddings.webp"
-            alt="quick-sticky-toffee-puddings img"
-            class="img-fluid rounded-4"
-          />
-          <div class="summary d-flex justify-content-center mt-3">
-            <div class="d-flex me-5">
-              <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
-              <img
-                src="../images/recipe/clock-time.svg"
-                alt="clock-time img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>PREP TIME</div>
-                <div>5 Minutes</div>
+    <main id="recipe">
+      <div class="banner-area">
+        <div class="container py-4">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <h1>
+                Bake. Learn.<br />
+                Love Cake.
+              </h1>
+              <div>
+                Discover easy recipes and fun cake facts that’ll make you smile
+                and crave another slice.
               </div>
             </div>
-            <div class="d-flex me-5">
-              <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
+            <div class="col-lg-6">
+              <!-- Reference: https://pixabay.com/vectors/sweets-cake-dessert-birthday-5387481/ -->
               <img
-                src="../images/recipe/clock-time.svg"
-                alt="clock-time img"
-                class="icon"
+                src="../images/recipe/banner.webp"
+                alt="banner img"
+                class="img-fluid"
               />
-              <div class="text-center">
-                <div>COOK TIME</div>
-                <div>10 Minutes</div>
-              </div>
             </div>
-            <div class="d-flex">
-              <img
-                src="../images/recipe/fork-knife.svg"
-                alt="fork-knife img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>
-                  <div>SERVES</div>
-                  <div>4</div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-4">
+        <h2 class="mb-3">Today's recipe</h2>
+        <h4 class="mb-3">Quick sticky toffee puddings</h4>
+        <div class="row">
+          <div class="col-lg-6 mb-3">
+            <!-- Reference: https://www.krumpli.co.uk/sticky-toffee-pudding/ -->
+            <img
+              src="../images/recipe/quick-sticky-toffee-puddings.webp"
+              alt="quick-sticky-toffee-puddings img"
+              class="img-fluid rounded-4"
+            />
+            <div
+              class="summary d-flex justify-content-center align-items-center mt-3"
+            >
+              <div class="d-flex me-5">
+                <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
+                <img
+                  src="../images/recipe/clock-time.svg"
+                  alt="clock-time img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>PREP TIME</div>
+                  <div>5 Minutes</div>
+                </div>
+              </div>
+              <div class="d-flex me-5">
+                <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
+                <img
+                  src="../images/recipe/clock-time.svg"
+                  alt="clock-time img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>COOK TIME</div>
+                  <div>10 Minutes</div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <img
+                  src="../images/recipe/fork-knife.svg"
+                  alt="fork-knife img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>
+                    <div>SERVES</div>
+                    <div>4</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 rounded-4 ingredients-nutrition p-3">
-          <div class="d-flex mb-2">
-            <div
-              id="ingredientsTab0"
-              onclick="showIngredients(0)"
-              class="active tab me-4"
-            >
-              Ingredients
+          <div class="col-lg-6 mb-3 rounded-4 ingredients-nutrition p-3">
+            <div class="d-flex mb-2">
+              <div
+                id="ingredientsTab0"
+                onclick="showIngredients(0)"
+                class="active tab me-4"
+              >
+                Ingredients
+              </div>
+              <div id="nutritionTab0" onclick="showNutrition(0)" class="tab">
+                Nutrition
+              </div>
             </div>
-            <div id="nutritionTab0" onclick="showNutrition(0)" class="tab">
-              Nutrition
+            <div id="ingredients0" class="lists">
+              <div class="d-flex justify-content-between py-2">
+                <div>large chocolate muffins (crumbled)</div>
+                <div>4</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>large sultanas</div>
+                <div>50g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>small knob of butter</div>
+                <div>1</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>light muscovado sugar</div>
+                <div>50g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>butter</div>
+                <div>50g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>double cream</div>
+                <div>75ml</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>vanilla ice cream</div>
+                <div>4 scoops</div>
+              </div>
+            </div>
+            <div id="nutrition0" class="lists nutrition">
+              <div class="d-flex justify-content-between py-2">
+                <div>kcal</div>
+                <div>555</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>fat</div>
+                <div>35g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>saturates</div>
+                <div>20g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>carbs</div>
+                <div>59g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>sugars</div>
+                <div>42g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>fiber</div>
+                <div>1g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>protein</div>
+                <div>5g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>salt</div>
+                <div>0.66g</div>
+              </div>
             </div>
           </div>
-          <div id="ingredients0" class="lists">
-            <div class="d-flex justify-content-between py-2">
-              <div>large chocolate muffins (crumbled)</div>
-              <div>4</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>large sultanas</div>
-              <div>50g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>small knob of butter</div>
-              <div>1</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>light muscovado sugar</div>
-              <div>50g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>butter</div>
-              <div>50g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>double cream</div>
-              <div>75ml</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>vanilla ice cream</div>
-              <div>4 scoops</div>
-            </div>
-          </div>
-          <div id="nutrition0" class="lists nutrition">
-            <div class="d-flex justify-content-between py-2">
-              <div>kcal</div>
-              <div>555</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>fat</div>
-              <div>35g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>saturates</div>
-              <div>20g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>carbs</div>
-              <div>59g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>sugars</div>
-              <div>42g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>fiber</div>
-              <div>1g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>protein</div>
-              <div>5g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>salt</div>
-              <div>0.66g</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h5 class="mb-3">Instructions</h5>
-        <div class="mb-3">
-          <h6>Step1</h6>
-          Heat oven to 200C/180C fan/gas 6. Mix the muffins with the sultanas.
-          Divide between 4 buttered ramekins or one baking dish. Cover with foil
-          and bake for 8 mins until just warmed through.
         </div>
         <div>
-          <h6>Step2</h6>
-          Meanwhile, place the sugar, butter and cream in a small pan and gently
-          heat together, stirring until the sugar dissolves. Pour the sauce over
-          the muffin mixture and serve warm with ice cream.
+          <h5 class="mb-3">Instructions</h5>
+          <div class="mb-3">
+            <h6>Step1</h6>
+            Heat oven to 200C/180C fan/gas 6. Mix the muffins with the sultanas.
+            Divide between 4 buttered ramekins or one baking dish. Cover with
+            foil and bake for 8 mins until just warmed through.
+          </div>
+          <div>
+            <h6>Step2</h6>
+            Meanwhile, place the sugar, butter and cream in a small pan and
+            gently heat together, stirring until the sugar dissolves. Pour the
+            sauce over the muffin mixture and serve warm with ice cream.
+          </div>
         </div>
-      </div>
-      <h5 class="mt-4 mb-3">Easy cheesecake</h5>
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <!-- Reference: https://www.bettycrocker.com/menus-holidays-parties/mhplibrary/recipes/impossibly-easy-desserts -->
-          <img
-            src="../images/recipe/easy-cheesecake.jpg"
-            alt="easy-cheesecake img"
-            class="img-fluid rounded-4"
-          />
-          <div class="summary d-flex justify-content-center mt-3">
-            <div class="d-flex me-5">
-              <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
-              <img
-                src="../images/recipe/clock-time.svg"
-                alt="clock-time img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>PREP TIME</div>
-                <div>15 Minutes</div>
+        <h4 class="mt-4 mb-3">Easy cheesecake</h4>
+        <div class="row">
+          <div class="col-lg-6 mb-3">
+            <!-- Reference: https://www.bettycrocker.com/menus-holidays-parties/mhplibrary/recipes/impossibly-easy-desserts -->
+            <img
+              src="../images/recipe/easy-cheesecake.jpg"
+              alt="easy-cheesecake img"
+              class="img-fluid rounded-4"
+            />
+            <div
+              class="summary d-flex justify-content-center align-items-center mt-3"
+            >
+              <div class="d-flex me-5">
+                <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
+                <img
+                  src="../images/recipe/clock-time.svg"
+                  alt="clock-time img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>PREP TIME</div>
+                  <div>15 Minutes</div>
+                </div>
               </div>
-            </div>
-            <div class="d-flex me-5">
-              <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
-              <img
-                src="../images/recipe/clock-time.svg"
-                alt="clock-time img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>COOK TIME</div>
-                <div>none</div>
+              <div class="d-flex me-5">
+                <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
+                <img
+                  src="../images/recipe/clock-time.svg"
+                  alt="clock-time img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>COOK TIME</div>
+                  <div>none</div>
+                </div>
               </div>
-            </div>
-            <div class="d-flex">
-              <img
-                src="../images/recipe/fork-knife.svg"
-                alt="fork-knife img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>
-                  <div>SERVES</div>
-                  <div>2</div>
+              <div class="d-flex">
+                <img
+                  src="../images/recipe/fork-knife.svg"
+                  alt="fork-knife img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>
+                    <div>SERVES</div>
+                    <div>2</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 rounded-4 ingredients-nutrition p-3">
-          <div class="d-flex mb-2">
-            <div
-              id="ingredientsTab1"
-              onclick="showIngredients(1)"
-              class="active tab me-4"
-            >
-              Ingredients
+          <div class="col-lg-6 mb-3 rounded-4 ingredients-nutrition p-3">
+            <div class="d-flex mb-2">
+              <div
+                id="ingredientsTab1"
+                onclick="showIngredients(1)"
+                class="active tab me-4"
+              >
+                Ingredients
+              </div>
+              <div id="nutritionTab1" onclick="showNutrition(1)" class="tab">
+                Nutrition
+              </div>
             </div>
-            <div id="nutritionTab1" onclick="showNutrition(1)" class="tab">
-              Nutrition
+            <div id="ingredients1" class="lists">
+              <div class="d-flex justify-content-between py-2">
+                <div>shortbread biscuits</div>
+                <div>4</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>tub soft cheese</div>
+                <div>300g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>zest and juice of lime</div>
+                <div>1</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>icing sugar</div>
+                <div>3 tbsp</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>frozen mixed berries</div>
+                <div>380g</div>
+              </div>
+            </div>
+            <div id="nutrition1" class="lists nutrition">
+              <div class="d-flex justify-content-between py-2">
+                <div>kcal</div>
+                <div>681</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>fat</div>
+                <div>48g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>saturates</div>
+                <div>35g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>carbs</div>
+                <div>55g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>sugars</div>
+                <div>35g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>fiber</div>
+                <div>4g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>protein</div>
+                <div>12g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>salt</div>
+                <div>1.85g</div>
+              </div>
             </div>
           </div>
-          <div id="ingredients1" class="lists">
-            <div class="d-flex justify-content-between py-2">
-              <div>shortbread biscuits</div>
-              <div>4</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>tub soft cheese</div>
-              <div>300g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>zest and juice of lime</div>
-              <div>1</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>icing sugar</div>
-              <div>3 tbsp</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>frozen mixed berries</div>
-              <div>380g</div>
-            </div>
-          </div>
-          <div id="nutrition1" class="lists nutrition">
-            <div class="d-flex justify-content-between py-2">
-              <div>kcal</div>
-              <div>681</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>fat</div>
-              <div>48g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>saturates</div>
-              <div>35g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>carbs</div>
-              <div>55g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>sugars</div>
-              <div>35g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>fiber</div>
-              <div>4g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>protein</div>
-              <div>12g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>salt</div>
-              <div>1.85g</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h5 class="mb-3">Instructions</h5>
-        <div class="mb-3">
-          <h6>Step1</h6>
-          Put the shortbread biscuits into a plastic bag and bash with a rolling
-          pin until broken. Divide between two dessert glasses. Beat together
-          the soft cheese with the zest of a lime and 2 tbsp icing sugar until
-          smooth. Put this on top of each biscuit base and smooth out with the
-          back of a spoon.
         </div>
         <div>
-          <h6>Step2</h6>
-          Take the mixed frozen berries, defrost and blend half with 1 tbsp
-          icing sugar and the juice of the lime. Pour this on top of each
-          cheesecake and scatter with a few extra whole berries. Serve or sit in
-          the fridge for a few hours before serving.
+          <h5 class="mb-3">Instructions</h5>
+          <div class="mb-3">
+            <h6>Step1</h6>
+            Put the shortbread biscuits into a plastic bag and bash with a
+            rolling pin until broken. Divide between two dessert glasses. Beat
+            together the soft cheese with the zest of a lime and 2 tbsp icing
+            sugar until smooth. Put this on top of each biscuit base and smooth
+            out with the back of a spoon.
+          </div>
+          <div>
+            <h6>Step2</h6>
+            Take the mixed frozen berries, defrost and blend half with 1 tbsp
+            icing sugar and the juice of the lime. Pour this on top of each
+            cheesecake and scatter with a few extra whole berries. Serve or sit
+            in the fridge for a few hours before serving.
+          </div>
         </div>
-      </div>
-      <h5 class="mt-4 mb-3">Lemon syllabub</h5>
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <!-- Reference: https://queenketo.com/sugar-free-lemon-prosecco-syllabub/ -->
-          <img
-            src="../images/recipe/lemon-syllabub.jpg"
-            alt="easy-cheesecake img"
-            class="img-fluid rounded-4"
-          />
-          <div class="summary d-flex justify-content-center mt-3">
-            <div class="d-flex me-5">
-              <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
-              <img
-                src="../images/recipe/clock-time.svg"
-                alt="clock-time img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>PREP TIME</div>
-                <div>10 Minutes</div>
+        <h4 class="mt-4 mb-3">Lemon syllabub</h4>
+        <div class="row">
+          <div class="col-lg-6 mb-3">
+            <!-- Reference: https://queenketo.com/sugar-free-lemon-prosecco-syllabub/ -->
+            <img
+              src="../images/recipe/lemon-syllabub.jpg"
+              alt="easy-cheesecake img"
+              class="img-fluid rounded-4"
+            />
+            <div
+              class="summary d-flex justify-content-center align-items-center mt-3"
+            >
+              <div class="d-flex me-5">
+                <!-- Reference: https://www.iconfinder.com/icons/9004801/clock_time_schedule_hour_icon -->
+                <img
+                  src="../images/recipe/clock-time.svg"
+                  alt="clock-time img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>PREP TIME</div>
+                  <div>10 Minutes</div>
+                </div>
               </div>
-            </div>
-            <div class="d-flex me-5">
-              <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
-              <img
-                src="../images/recipe/clock-time.svg"
-                alt="clock-time img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>COOK TIME</div>
-                <div>none</div>
+              <div class="d-flex me-5">
+                <!-- Reference: https://www.iconfinder.com/icons/9023414/fork_knife_fill_icon -->
+                <img
+                  src="../images/recipe/clock-time.svg"
+                  alt="clock-time img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>COOK TIME</div>
+                  <div>none</div>
+                </div>
               </div>
-            </div>
-            <div class="d-flex">
-              <img
-                src="../images/recipe/fork-knife.svg"
-                alt="fork-knife img"
-                class="icon"
-              />
-              <div class="text-center">
-                <div>
-                  <div>SERVES</div>
-                  <div>4</div>
+              <div class="d-flex">
+                <img
+                  src="../images/recipe/fork-knife.svg"
+                  alt="fork-knife img"
+                  class="icon"
+                />
+                <div class="text-center">
+                  <div>
+                    <div>SERVES</div>
+                    <div>4</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 rounded-4 ingredients-nutrition p-3">
-          <div class="d-flex mb-2">
-            <div
-              id="ingredientsTab2"
-              onclick="showIngredients(2)"
-              class="active tab me-4"
-            >
-              Ingredients
+          <div class="col-lg-6 mb-3 rounded-4 ingredients-nutrition p-3">
+            <div class="d-flex mb-2">
+              <div
+                id="ingredientsTab2"
+                onclick="showIngredients(2)"
+                class="active tab me-4"
+              >
+                Ingredients
+              </div>
+              <div id="nutritionTab2" onclick="showNutrition(2)" class="tab">
+                Nutrition
+              </div>
             </div>
-            <div id="nutritionTab2" onclick="showNutrition(2)" class="tab">
-              Nutrition
+            <div id="ingredients2" class="lists">
+              <div class="d-flex justify-content-between py-2">
+                <div>whipping cream</div>
+                <div>284ml</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>caster sugar</div>
+                <div>50g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>white wine</div>
+                <div>50ml</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>zest and juice</div>
+                <div>1/2 lemon</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>almond thins or berries</div>
+                <div>to serve</div>
+              </div>
+            </div>
+            <div id="nutrition2" class="lists nutrition">
+              <div class="d-flex justify-content-between py-2">
+                <div>kcal</div>
+                <div>329</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>fat</div>
+                <div>29g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>saturates</div>
+                <div>18g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>carbs</div>
+                <div>15g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>sugars</div>
+                <div>15g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>fiber</div>
+                <div>0g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>protein</div>
+                <div>2g</div>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <div>salt</div>
+                <div>0.05g</div>
+              </div>
             </div>
           </div>
-          <div id="ingredients2" class="lists">
-            <div class="d-flex justify-content-between py-2">
-              <div>whipping cream</div>
-              <div>284ml</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>caster sugar</div>
-              <div>50g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>white wine</div>
-              <div>50ml</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>zest and juice</div>
-              <div>1/2 lemon</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>almond thins or berries</div>
-              <div>to serve</div>
-            </div>
-          </div>
-          <div id="nutrition2" class="lists nutrition">
-            <div class="d-flex justify-content-between py-2">
-              <div>kcal</div>
-              <div>329</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>fat</div>
-              <div>29g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>saturates</div>
-              <div>18g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>carbs</div>
-              <div>15g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>sugars</div>
-              <div>15g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>fiber</div>
-              <div>0g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>protein</div>
-              <div>2g</div>
-            </div>
-            <div class="d-flex justify-content-between py-2">
-              <div>salt</div>
-              <div>0.05g</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h5 class="mb-3">Instructions</h5>
-        <div class="mb-3">
-          <h6>Step1</h6>
-          Put the shortbread biscuits into a plastic bag and bash with a rolling
-          pin until broken. Divide between two dessert glasses. Beat together
-          the soft cheese with the zest of a lime and 2 tbsp icing sugar until
-          smooth. Put this on top of each biscuit base and smooth out with the
-          back of a spoon.
         </div>
         <div>
-          <h6>Step2</h6>
-          Take the mixed frozen berries, defrost and blend half with 1 tbsp
-          icing sugar and the juice of the lime. Pour this on top of each
-          cheesecake and scatter with a few extra whole berries. Serve or sit in
-          the fridge for a few hours before serving.
-        </div>
-      </div>
-      <h3 class="my-3">Curiosity About Cakes 🍰</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <!-- Reference: https://unsplash.com/photos/happy-birthday-cake-with-candles-Z30Jpgmx2UY -->
-            <img
-              src="../images/recipe/birthday-cake.avif"
-              class="card-img-top"
-              alt="birthday-cake img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Why are birthday cakes round?</h5>
-              <p class="card-text">
-                The tradition started in ancient Greece to honor Artemis, the
-                moon goddess. The round shape symbolized the moon!
-              </p>
-            </div>
+          <h5 class="mb-3">Instructions</h5>
+          <div class="mb-3">
+            <h6>Step1</h6>
+            Put the shortbread biscuits into a plastic bag and bash with a
+            rolling pin until broken. Divide between two dessert glasses. Beat
+            together the soft cheese with the zest of a lime and 2 tbsp icing
+            sugar until smooth. Put this on top of each biscuit base and smooth
+            out with the back of a spoon.
+          </div>
+          <div>
+            <h6>Step2</h6>
+            Take the mixed frozen berries, defrost and blend half with 1 tbsp
+            icing sugar and the juice of the lime. Pour this on top of each
+            cheesecake and scatter with a few extra whole berries. Serve or sit
+            in the fridge for a few hours before serving.
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <!-- Reference: https://www.indiatoday.in/education-today/gk-current-affairs/story/most-expensive-cakes-839036-2016-12-14 -->
-            <img
-              src="../images/recipe/most-expensive-cake.avif"
-              class="card-img-top"
-              alt="birthday-cake img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                What is the world’s most expensive cake?
-              </h5>
-              <p class="card-text">
-                One cake was worth $75 million, covered with diamonds and made
-                by a British designer for a Dubai client!
-              </p>
+        <h2 class="my-3">Curiosity About Cakes 🍰</h2>
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <!-- Reference: https://unsplash.com/photos/happy-birthday-cake-with-candles-Z30Jpgmx2UY -->
+              <img
+                src="../images/recipe/birthday-cake.avif"
+                class="card-img-top"
+                alt="birthday-cake img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Why are birthday cakes round?</h5>
+                <p class="card-text">
+                  The tradition started in ancient Greece to honor Artemis, the
+                  moon goddess. The round shape symbolized the moon!
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <!-- Reference: https://unsplash.com/photos/brown-bread-on-white-table-WTdhG5_B02U -->
-            <img
-              src="../images/recipe/sponge-cake.avif"
-              class="card-img-top"
-              alt="birthday-cake img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">How old is the sponge cake?</h5>
-              <p class="card-text">
-                Sponge cake dates back to the Renaissance era in Europe—it’s one
-                of the oldest known types of cake!
-              </p>
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <!-- Reference: https://www.indiatoday.in/education-today/gk-current-affairs/story/most-expensive-cakes-839036-2016-12-14 -->
+              <img
+                src="../images/recipe/most-expensive-cake.avif"
+                class="card-img-top"
+                alt="birthday-cake img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  What is the world’s most expensive cake?
+                </h5>
+                <p class="card-text">
+                  One cake was worth $75 million, covered with diamonds and made
+                  by a British designer for a Dubai client!
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <!-- Reference: https://unsplash.com/photos/chocolate-cake-with-chocolate-syrup-on-top-QLSh4y2v93c -->
-            <img
-              src="../images/recipe/chocolate-cake.avif"
-              class="card-img-top"
-              alt="birthday-cake img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                When was the first chocolate cake made?
-              </h5>
-              <p class="card-text">
-                The first chocolate cake recipe appeared in 1847 in America, and
-                it became a hit after cocoa powder became more available.
-              </p>
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <!-- Reference: https://unsplash.com/photos/brown-bread-on-white-table-WTdhG5_B02U -->
+              <img
+                src="../images/recipe/sponge-cake.avif"
+                class="card-img-top"
+                alt="birthday-cake img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">How old is the sponge cake?</h5>
+                <p class="card-text">
+                  Sponge cake dates back to the Renaissance era in Europe—it’s
+                  one of the oldest known types of cake!
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <!-- Reference: https://unsplash.com/photos/a-piece-of-red-velvet-cake-on-a-glass-plate-tXiZlnH91L4 -->
-            <img
-              src="../images/recipe/red-velvet-cake.avif"
-              class="card-img-top"
-              alt="birthday-cake img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Why is red velvet cake red?</h5>
-              <p class="card-text">
-                Originally, the red color came from natural cocoa reacting with
-                acidic ingredients. Today, most recipes add red food coloring
-                for that bold look.
-              </p>
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <!-- Reference: https://unsplash.com/photos/chocolate-cake-with-chocolate-syrup-on-top-QLSh4y2v93c -->
+              <img
+                src="../images/recipe/chocolate-cake.avif"
+                class="card-img-top"
+                alt="birthday-cake img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  When was the first chocolate cake made?
+                </h5>
+                <p class="card-text">
+                  The first chocolate cake recipe appeared in 1847 in America,
+                  and it became a hit after cocoa powder became more available.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <!-- Reference: https://unsplash.com/photos/round-cake-with-nuts-DuEzZuleS8g -->
-            <img
-              src="../images/recipe/almond-cake.avif"
-              class="card-img-top"
-              alt="birthday-cake img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Can cakes be healthy?</h5>
-              <p class="card-text">
-                Yes! With ingredients like almond flour, natural sweeteners, and
-                fruits, many cakes today are made to be both delicious and
-                nutritious.
-              </p>
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <!-- Reference: https://unsplash.com/photos/a-piece-of-red-velvet-cake-on-a-glass-plate-tXiZlnH91L4 -->
+              <img
+                src="../images/recipe/red-velvet-cake.avif"
+                class="card-img-top"
+                alt="birthday-cake img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Why is red velvet cake red?</h5>
+                <p class="card-text">
+                  Originally, the red color came from natural cocoa reacting
+                  with acidic ingredients. Today, most recipes add red food
+                  coloring for that bold look.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <!-- Reference: https://unsplash.com/photos/round-cake-with-nuts-DuEzZuleS8g -->
+              <img
+                src="../images/recipe/almond-cake.avif"
+                class="card-img-top"
+                alt="birthday-cake img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Can cakes be healthy?</h5>
+                <p class="card-text">
+                  Yes! With ingredients like almond flour, natural sweeteners,
+                  and fruits, many cakes today are made to be both delicious and
+                  nutritious.
+                </p>
+              </div>
             </div>
           </div>
         </div>

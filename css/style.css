@@ -14,10 +14,6 @@ a {
   color: #000;
 }
 
-/* TODO font & html link */
-/* TODO redundant pics */
-/* TODO header disapears when scroll down */
-/* header */
 header {
   box-shadow: 0 0 8px 0 rgb(143 155 179 / 80%);
   background: #fff;
@@ -41,13 +37,14 @@ header .slogan {
   position: relative;
   top: 4px;
 }
-header .game-img {
-  width: 24px;
-  cursor: pointer;
+@media (min-width: 768px) {
+  header .navbar {
+    min-width: 472px;
+  }
 }
 header .links a {
   font-size: 15px;
-  margin-left: 32px;
+  margin-left: 24px;
   position: relative;
 }
 header .links a.active {
@@ -69,7 +66,6 @@ header .links a:hover::before {
   width: 100%;
 }
 
-/* popup */
 .popup {
   position: fixed;
   left: 0;
@@ -95,13 +91,12 @@ header .links a:hover::before {
   right: 24px;
   cursor: pointer;
 }
-/* minigame */
+
 .gift-img {
   width: 80px;
   cursor: pointer;
 }
 
-/* footer */
 footer {
   min-height: 96px;
   max-height: 96px;
@@ -114,9 +109,15 @@ footer {
 /*
 *** @author DONG ***
 */
+#contact .banner-area {
+  background: #f1e7e7;
+}
 #contact .address {
   margin: 0;
   background: #f1e7e7;
+}
+#contact .address .img-fluid {
+  width: 100%;
 }
 #contact .icons img {
   width: 32px;
@@ -131,7 +132,9 @@ footer {
   background: #ffd0c7;
   width: 100%;
 }
-/* TODO overwrite bootstrap highlight color */
+#contact .faq .accordion-button:not(.collapsed) {
+  background-color: #f1e7e7;
+}
 #contact .faq .tabs {
   font-size: 18px;
   position: relative;
@@ -160,6 +163,9 @@ footer {
   width: 100%;
 }
 
+#recipe .banner-area {
+  background: #f1e7e7;
+}
 #recipe .summary {
   font-size: 14px;
 }
@@ -197,6 +203,10 @@ footer {
 }
 #recipe .ingredients-nutrition .lists > div:not(:first-child) {
   border-top: 1px solid #666;
+}
+#recipe .card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
 /*
@@ -269,8 +279,7 @@ footer {
   text-align: left;
   width: 100%;
   object-fit: cover;
-    
-    }
+}
 
 #about .banner-text {
   width: 80%;
@@ -282,18 +291,17 @@ footer {
 }
 
 #about .contact-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #e69db8;
-    border: 1px solid #e69db8;
-    border-radius: 8px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #e69db8;
+  border: 1px solid #e69db8;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 #about .contact-button:hover {
-    background-color: #fce3eb;
-
+  background-color: #fce3eb;
 }
 
 #about .intro-title {
@@ -474,19 +482,19 @@ footer {
 }
 
 #about .view-more-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #e69db8;
-    border: 1px solid #e69db8;
-    border-radius: 8px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #e69db8;
+  border: 1px solid #e69db8;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
-    #about .view-more-button:hover {
-    background-color: #fce3eb;
-  }
+#about .view-more-button:hover {
+  background-color: #fce3eb;
+}
 
 .wave-container {
   width: 100vw;
@@ -510,9 +518,6 @@ footer {
   padding-top: 0;
 }
 
-
-
-
 /* THIS IS MY MENU/GALLERY PAGE  */
 
 #menu .banner-img {
@@ -520,38 +525,35 @@ footer {
   text-align: left;
   width: 100%;
   object-fit: cover;
-
 }
 
 #menu .banner-text {
   width: 80%;
   margin: 0 auto;
-  color: #c45f7b  ;
+  color: #c45f7b;
   padding: 24px;
   font-family: "Give You Glory";
   font-size: medium;
 }
 
-#menu .banner-text p{
-  color:black;
-} 
-
+#menu .banner-text p {
+  color: black;
+}
 
 .contact-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #e69db8;
-    border: 1px solid #e69db8;
-    border-radius: 8px;
-    margin-top: 20px;
-    cursor: pointer;
-  }
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #e69db8;
+  border: 1px solid #e69db8;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
 .contact-button:hover {
-      background-color: #fce3eb;
-  }
-
+  background-color: #fce3eb;
+}
 
 /* GALLERY SECTION  */
 
@@ -566,7 +568,6 @@ footer {
   color: #c45f7b;
   font-family: "Give You Glory", cursive;
   margin-bottom: 30px;
-
 }
 #menu .gallery-title:after {
   content: "";
@@ -578,14 +579,13 @@ footer {
   border-radius: 4px;
 }
 
-
 .dessert-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   border: none;
-  position: relative;  /* allows text on top of image*/
+  position: relative; /* allows text on top of image*/
 }
 
 .dessert-card:hover {
@@ -603,11 +603,9 @@ footer {
   transition: transform 0.3s ease;
 }
 
-
-#menu .dessert-card:hover img { 
+#menu .dessert-card:hover img {
   transform: scale(1.05); /* zoom effect using hoover */
 }
-
 
 #menu .dessert-card {
   position: relative;
@@ -642,8 +640,6 @@ footer {
   color: white;
 }
 
-
-
 #menu .dessert-card:hover .card-text {
   color: #ff69b4;
   transform: translateY(-2px);
@@ -651,8 +647,6 @@ footer {
 #menu .hidden {
   display: none;
 }
-
-
 
 /* Lightbox */
 #lightbox {
@@ -671,17 +665,17 @@ footer {
 
 #lightbox img {
   max-width: 90%;
-  max-height: 640px; 
-  object-fit: contain;  
+  max-height: 640px;
+  object-fit: contain;
   margin-bottom: 20px;
 }
 
-#lightbox-title{
-  color:white;
+#lightbox-title {
+  color: white;
 }
 
 #lightbox-text {
-  color: #ff69b4; 
+  color: #ff69b4;
   font-size: 20px;
   text-align: center;
   max-width: 90%;
@@ -732,12 +726,10 @@ footer {
   background-color: #fce3eb;
 }
 
-
 /* this is Menu Gallery section 2 */
 #menu .vegan-highlight-section {
   background-color: white;
   padding: 40px 20px;
-
 }
 
 #menu .vegan-title {
@@ -758,7 +750,7 @@ footer {
 
 #menu .vegan-text {
   font-size: 25px;
-  text-align:left;
+  text-align: left;
   color: black;
   margin-top: 100px;
   font-family: "Give You Glory", cursive;
@@ -783,5 +775,4 @@ footer {
   width: 100%;
   height: auto;
   max-width: 350px;
- 
 }

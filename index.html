@@ -34,64 +34,45 @@
           <span class="brand">CakeZilla</span>
         </a>
         <span class="slogan mx-3">Cake That Feels Like Home</span>
-        <!-- Reference: https://www.iconfinder.com/icons/7717240/gift_box_present_ribbon_birthday_gifts_icon -->
-        <img
-          src="images/gift_box.svg"
-          title="play a minigame to get the discount code"
-          alt="gift_box img"
-          class="game-img"
-          onclick="showMinigame()"
-        />
-        <div
-          id="minigame-popup"
-          class="popup d-flex justify-content-center align-items-center"
-        >
-          <div class="popup-content p-4">
-            <p class="text-center popup-title">
-              🎯 Guess which box has the cake!
-            </p>
-            <button
-              onclick="closeMinigame()"
-              type="button"
-              class="btn-close popup-close"
-            ></button>
-            <div class="row">
-              <div class="col text-center">
-                <img
-                  onclick="guessCake(0)"
-                  src="images/gift_box.svg"
-                  alt="cake img"
-                  class="gift-img"
-                />
-              </div>
-              <div class="col text-center">
-                <img
-                  onclick="guessCake(1)"
-                  src="images/gift_box.svg"
-                  alt="cake img"
-                  class="gift-img"
-                />
-              </div>
-              <div class="col text-center">
-                <img
-                  onclick="guessCake(2)"
-                  src="images/gift_box.svg"
-                  alt="cake img"
-                  class="gift-img"
-                />
-              </div>
-            </div>
+      </div>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <div class="navbar-brand"></div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse links" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="link-homepage" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-vegan" href="pages/vegan.html">Vegan</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-menu" href="pages/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-about" href="pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-recipe" href="pages/recipe.html">Recipe</a>
+              </li>
+              <li class="nav-item">
+                <a id="link-contact" href="pages/contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="links">
-        <a id="link-homepage" href="index.html">Home</a>
-        <a id="link-vegan" href="pages/vegan.html">Vegan</a>
-        <a id="link-menu" href="pages/menu.html">Menu</a>
-        <a id="link-aboutus" href="pages/about.html">About Us</a>
-        <a id="link-recipe" href="pages/recipe.html">Recipe</a>
-        <a id="link-contact" href="pages/contact.html">Contact</a>
-      </div>
+      </nav>
     </header>
     <main id="home">
       <div class="container-fluid">
