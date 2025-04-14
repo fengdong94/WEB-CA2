@@ -212,22 +212,27 @@ footer {
 /*
 *** @author CAROLINA ***
 */
-#home .banner {
-  width: 100%;
-  align-items: right;
-  justify-items: right;
-  background-color: white;
-}
-#home .c1Todo {
-  display: flex;
-  justify-content: center;
-  gap: 0%;
+/** HOME Fonts**/
+
+#home h3,
+.titleDescription,
+.title1,
+.veganAllergy,
+.questions,
+.contactUs,
+.quizInstructions {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-#home .title1 {
-  font-family: "Poiret One", sans-serif;
-  font-size: 48px;
-  text-align: center;
+#home h2,
+.sr-only {
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #c45f7b;
 }
 
 #home .oneWordT {
@@ -235,16 +240,42 @@ footer {
   color: #c45f7b;
 }
 
+#home .bannerHP {
+  background-image: url("../images/home/bgBannerHP2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  align-items: center;
+}
+
+#home .applePieHeader {
+  width: 80%;
+}
+
+#myCarousel .carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+#home .title1 {
+  font-size: 48px;
+  text-align: center;
+}
+
 #home .titleDescription {
-  font-size: 45px;
+  font-size: 30px;
   align-items: center;
   justify-content: center;
 }
 #home .subtitleHome {
-  font-family: "Give You Glory", cursive;
   font-size: 30px;
   color: #c45f7b;
   text-align: center;
+  margin-top: 50px;
 }
 
 #home .veganAllergy,
@@ -252,23 +283,214 @@ footer {
   font-size: 24px;
 }
 
-#home .review {
+#home .review.container {
   background-color: #f1e7e7;
-  background-size: cover;
-  background-position: center;
   border-radius: 15px;
-  padding: 20px;
+  padding: 30px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px #d69ade;
 }
 
-#home .reviews {
+#home .review-box {
+  font-style: italic;
   font-size: 20px;
+  padding: 20px;
+  background-color: #f1e7e7;
+  border-radius: 8px;
+  min-height: 100px;
+  /**box-shadow: 0 4px 12px #d69ade;**/
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
+
+#home .buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#home button {
+  background-color: #ffe3ec;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#home button:hover {
+  background-color: #de5d83;
+}
+
+#home form textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#home form button[type="submit"] {
+  margin-top: 10px;
+  background-color: #ffe3ec;
+}
+
+#home form button[type="submit"]:hover {
+  background-color: #de5d83;
+}
+
+#home .cakeQuiz {
+  background-color: #f1e7e7;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px #d69ade;
+}
+
+#home .questions {
+  margin: 15px 0;
+}
+
+#home .questions label {
+  font-weight: bold;
+}
+
+#home select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#home .result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#home .contactUs {
+  margin: 15px 0;
+  text-align: center;
+}
+
+/**FONTS Vegan**/
+
 #vegan p {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 40px;
 }
 
-#vegan .pie {
+#vegan h2 {
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #74851a;
+}
+
+#vegan .bannerV {
+  background-image: url("../images/vegan/bgBanner2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  align-items: center;
+}
+
+#vegan .pie {
+  width: 60%;
+}
+
+#vegan h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#vegan .gallery-img {
+  width: 100%; /* Make image fill the column width */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoom effect on hover */
+#vegan .gallery-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#vegan .gallery-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#vegan h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#vegan .recipeSelect {
+  margin: 30px auto;
+  text-align: center;
+}
+
+#vegan select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#vegan .recipe {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+#vegan .tabs {
+  display: flex;
+  border-bottom: 2px solid #eee;
+}
+
+#vegan .tab-button {
+  flex: 1;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#vegan .tab-button:hover {
+  background-color: #b8cf49;
+}
+
+#vegan .tab-button .active {
+  background-color: white;
+  border-bottom: 2px solid #74851a;
+  color: #74851a;
+}
+
+#vegan .tab-content {
+  display: none;
+  padding: 20px;
+}
+
+#vegan .tab-content .active {
+  display: block;
 }
 
 /*
