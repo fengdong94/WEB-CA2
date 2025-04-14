@@ -506,7 +506,7 @@ footer {
 #about .banner-text {
   width: 80%;
   margin: 0 auto;
-  color: white;
+  color: #c45f7b;
   padding: 24px;
   font-family: "Give You Glory";
   font-size: medium;
@@ -528,7 +528,6 @@ footer {
 
 #about .intro-title {
   text-align: center;
-  font-size: 28px;
   color: #c45f7b;
   margin-bottom: 24px;
   margin-top: 24px;
@@ -553,6 +552,7 @@ footer {
   color: #333;
   padding: 0 12px;
   margin-top: 12px;
+  font-family: "Cursive";
 }
 
 #about .intro-text b {
@@ -584,14 +584,13 @@ footer {
 
 #about .whychoose-title {
   text-align: center;
-  font-size: 28px;
   color: #c45f7b;
   margin-top: 0;
   margin-bottom: 24px;
-  font-family: "Give You Glory" cursive;
   font-size: 36px;
-  padding-top: 24px;
+  font-family: "Give You Glory";
 }
+
 #about .whychoose-title::after {
   content: "";
   display: block;
@@ -604,7 +603,7 @@ footer {
 #about .reason {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 16px;
 }
 
 #about .reason img {
@@ -695,7 +694,6 @@ footer {
   margin-top: 12px;
   margin-bottom: 0;
   font-weight: bold;
-  font-family: "Give You Glory", cursive;
 }
 
 #about .view-more-container {
@@ -718,17 +716,15 @@ footer {
   background-color: #fce3eb;
 }
 
-.wave-container {
-  width: 100vw;
+#about .wave-container {
   overflow: hidden;
   line-height: 0;
   margin: 0;
   padding: 0;
 }
 
-.wave-svg,
-.wave-svg-top,
-.wave-svg-bottom {
+#about .wave-svg-top,
+#about .wave-svg-bottom {
   width: 100%;
   height: auto;
   display: block;
@@ -762,7 +758,7 @@ footer {
   color: black;
 }
 
-.contact-button {
+#menu .contact-button {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
@@ -773,22 +769,42 @@ footer {
   cursor: pointer;
 }
 
-.contact-button:hover {
+#menu .contact-button:hover {
   background-color: #fce3eb;
 }
 
 /* GALLERY SECTION  */
 
-.gallery-section {
+#menu .wave-container {
+  overflow: hidden;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#menu .wave-svg-top {
+  background-color: #f1e7e7;
+}
+
+#menu .wave-svg-top,
+#menu .wave-svg-bottom {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#menu .gallery-section {
   background-color: #ffd0c7;
   padding: 40px 0;
   width: 100%;
 }
 
-.gallery-title {
+#menu .gallery-title {
   font-size: 28px;
   color: #c45f7b;
-  font-family: "Give You Glory", cursive;
+  font-family: "Give You Glory";
   margin-bottom: 30px;
 }
 #menu .gallery-title:after {
@@ -801,7 +817,7 @@ footer {
   border-radius: 4px;
 }
 
-.dessert-card {
+#menu .dessert-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
   overflow: hidden;
@@ -810,7 +826,7 @@ footer {
   position: relative; /* allows text on top of image*/
 }
 
-.dessert-card:hover {
+#menu .dessert-card:hover {
   transform: scale(1.03);
   box-shadow: 0 10px 20px #999;
 }
@@ -839,7 +855,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #000000cc; /*black transparent*/
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -866,9 +882,6 @@ footer {
   color: #ff69b4;
   transform: translateY(-2px);
 }
-#menu .hidden {
-  display: none;
-}
 
 /* Lightbox */
 #lightbox {
@@ -877,12 +890,13 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  overflow: auto; //scrolls the image if its too big
+  /* scrolls the image if its too big */
+  overflow: auto;
 }
 
 #lightbox img {
@@ -989,7 +1003,7 @@ footer {
   cursor: pointer;
 }
 
-#menu .vegan-button:hover {
+#menu .veganButton:hover {
   background-color: #fce3eb;
 }
 
