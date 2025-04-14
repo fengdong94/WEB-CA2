@@ -46,9 +46,11 @@ header .links a {
   font-size: 15px;
   margin-left: 24px;
   position: relative;
+  font-family: "Poiret One";
 }
 header .links a.active {
   color: #ffd0c7;
+  font-weight: bold;
 }
 header .links a:before {
   content: "";
@@ -80,6 +82,7 @@ header .links a:hover::before {
   position: relative;
   background: #fff;
   width: 60%;
+  border-radius: 16px;
 }
 .popup .popup-title {
   font-size: 16px;
@@ -104,13 +107,21 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Poiret One";
 }
 
 /*
 *** @author DONG ***
 */
+#contact {
+  font-family: "Poiret One";
+}
 #contact .banner-area {
   background: #f1e7e7;
+  font-size: 24px;
+}
+#contact .banner-area h1 {
+  font-size: 32px;
 }
 #contact .address {
   margin: 0;
@@ -132,6 +143,10 @@ footer {
   background: #ffd0c7;
   width: 100%;
 }
+#contact .faq h3 {
+  font-family: "Give You Glory";
+  color: #c45f7b;
+}
 #contact .faq .accordion-button:not(.collapsed) {
   background-color: #f1e7e7;
 }
@@ -149,7 +164,7 @@ footer {
   display: block;
   position: absolute;
   height: 3px;
-  background: #e69db8;
+  background: #c45f7b;
   width: 0;
   left: 0;
   bottom: -5px;
@@ -163,8 +178,25 @@ footer {
   width: 100%;
 }
 
+#recipe {
+  font-family: "Poiret One";
+}
+#recipe h2,
+h4,
+h5:not(.card-title) {
+  font-family: "Give You Glory";
+  color: #c45f7b;
+  text-align: center;
+}
 #recipe .banner-area {
   background: #f1e7e7;
+  font-size: 24px;
+}
+#recipe .banner-area h1 {
+  font-size: 32px;
+}
+#recipe .banner-area .banner-img {
+  width: 64%;
 }
 #recipe .summary {
   font-size: 14px;
@@ -188,7 +220,7 @@ footer {
   display: block;
   position: absolute;
   height: 3px;
-  background: #e69db8;
+  background: #c45f7b;
   width: 0;
   left: 0;
   bottom: -5px;
@@ -207,6 +239,12 @@ footer {
 #recipe .card-img-top {
   height: 200px;
   object-fit: cover;
+}
+#recipe .card {
+  transition: all 0.5s ease;
+}
+#recipe .card:hover {
+  transform: scale(1.05);
 }
 
 /*

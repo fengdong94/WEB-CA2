@@ -1,3 +1,5 @@
+// @author Dong
+
 // menu item highlight
 if (location.pathname.endsWith("index.html")) {
   document.getElementById("link-homepage").className = "active";
