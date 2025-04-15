@@ -589,31 +589,42 @@ h5:not(.card-title) {
 /*
 *** @author LICIA ***
 */
-#about .banner-img {
+#about .banner-container {
   background-color: #f1e7e7;
   text-align: left;
   width: 100%;
   object-fit: cover;
 }
+#about .banner-img {
+  width: 75%;
+}
 
 #about .banner-text {
   width: 80%;
   margin: 0 auto;
-  color: #c45f7b;
   padding: 24px;
-  font-family: "Give You Glory";
-  font-size: medium;
+  font-family: "Poiret One", sans-serif;
+  font: size 32px;
+}
+#about .banner-text span {
+  font-family: "Beth ellen";
+  color:#c45f7b;
+}
+#about .banner-text p {
+  font-size: 24px;
 }
 
 #about .contact-button {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #e69db8;
+  color: black;
   border: 1px solid #e69db8;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
+  font-family: "Poiret One", sans-serif;
+  
 }
 #about .contact-button:hover {
   background-color: #fce3eb;
@@ -628,24 +639,15 @@ h5:not(.card-title) {
   font-size: 36px;
 }
 
-#about .intro-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background-color: #e69db8;
-  margin: 10px auto 0;
-  border-radius: 4px;
-}
 
 #about .intro-text {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 2.0;
   text-align: justify;
-  color: #333;
+  color: black;
   padding: 0 12px;
   margin-top: 12px;
-  font-family: "Cursive";
+  font-family: "Poiret One", sans-serif;
 }
 
 #about .intro-text b {
@@ -684,15 +686,6 @@ h5:not(.card-title) {
   font-family: "Give You Glory";
 }
 
-#about .whychoose-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background-color: #e69db8;
-  margin: 10px auto 0;
-  border-radius: 4px;
-}
 #about .reason {
   display: flex;
   align-items: flex-start;
@@ -709,10 +702,11 @@ h5:not(.card-title) {
   flex: 1;
 }
 
-#about .text-content {
-  flex-direction: column;
-  font-size: medium;
+#about .text-content p {
+  font-family: "Poiret One", sans-serif;
+  font-size: 20px;
 }
+
 /* favorite section  */
 
 #about .fav-title {
@@ -723,15 +717,8 @@ h5:not(.card-title) {
   font-family: "Give You Glory";
 }
 
-#about .fav-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background-color: #e69db8;
-  margin: 10px auto 0;
-  border-radius: 4px;
-}
+
+
 
 #about .favorites {
   background-color: white;
@@ -752,15 +739,15 @@ h5:not(.card-title) {
 
 #about .dessert {
   background-color: #dfb0b0;
-  width: 200px;
+  width: 350px;
   border-radius: 16px;
   padding: 16px;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.2 ease-in-out;
   transform: scale(0.9);
   z-index: 1;
   box-shadow: 0 4px 12px #d69ade;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 #about .cake-img {
@@ -798,11 +785,13 @@ h5:not(.card-title) {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #e69db8;
+  color: #black;
   border: 1px solid #e69db8;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
+  font-family: "Poiret One", sans-serif;
+  margin-bottom:30px;
 }
 
 #about .view-more-button:hover {
@@ -815,7 +804,7 @@ h5:not(.card-title) {
   margin: 0;
   padding: 0;
 }
-
+#about .waveBanner,
 #about .wave-svg-top,
 #about .wave-svg-bottom {
   width: 100%;
@@ -831,10 +820,15 @@ h5:not(.card-title) {
 
 /* THIS IS MY MENU/GALLERY PAGE  */
 
-#menu .banner-img {
-  background-color: #f1e7e7;
+
+
+#menu .banner-container{
   text-align: left;
   width: 100%;
+  background-color: #f1e7e7;
+}
+#menu .banner-img {
+  max-width: 90%;
   object-fit: cover;
 }
 
@@ -843,23 +837,25 @@ h5:not(.card-title) {
   margin: 0 auto;
   color: #c45f7b;
   padding: 24px;
-  font-family: "Give You Glory";
-  font-size: medium;
+  font-family: "Poiret One", sans-serif;
+  font-size: 32px;
 }
 
 #menu .banner-text p {
   color: black;
+  font-size: 24px;
 }
 
 #menu .contact-button {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #e69db8;
+  color: black;
   border: 1px solid #e69db8;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
+  font-family: "Poiret One", sans-serif;
 }
 
 #menu .contact-button:hover {
@@ -900,15 +896,7 @@ h5:not(.card-title) {
   font-family: "Give You Glory";
   margin-bottom: 30px;
 }
-#menu .gallery-title:after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background-color: #e69db8;
-  margin: 10px auto 0;
-  border-radius: 4px;
-}
+
 
 #menu .dessert-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -969,11 +957,13 @@ h5:not(.card-title) {
   font-weight: bold;
   margin-bottom: 8px;
   color: white;
+  font-family: "Poiret One", sans-serif;
 }
 
 #menu .dessert-card:hover .card-text {
   color: #ff69b4;
   transform: translateY(-2px);
+  font-family: "Poiret One", sans-serif;
 }
 
 /* Lightbox */
@@ -1001,6 +991,7 @@ h5:not(.card-title) {
 
 #lightbox-title {
   color: white;
+  font-family: "Poiret One", sans-serif;
 }
 
 #lightbox-text {
@@ -1011,7 +1002,7 @@ h5:not(.card-title) {
   word-wrap: break-word;
   margin-top: 15px;
   padding: 0 10px;
-}
+font-family: "Poiret One", sans-serif;}
 
 /*close the lightbox */
 #lightbox-close {
@@ -1037,63 +1028,56 @@ h5:not(.card-title) {
   padding: 20px;
 }
 
-#showMoreBtn,
-#showLessBtn {
+#showMoreButton,
+#showLessButton {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #e69db8;
+  color: black;
   border: 1px solid #e69db8;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "Poiret One", sans-serif;
 }
 
-#showMoreBtn:hover,
-#showLessBtn:hover {
+#showMoreButton:hover,
+#showLessButton:hover {
   background-color: #fce3eb;
 }
 
 /* this is Menu Gallery section 2 */
 #menu .vegan-highlight-section {
   background-color: white;
-  padding: 40px 20px;
+  padding: 35px 20px;
 }
 
 #menu .vegan-title {
-  font-size: 34px;
+  font-size: 32px;
   color: #c45f7b;
   font-family: "Give You Glory", cursive;
   margin-bottom: 0;
 }
-#menu .vegan-title:after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background-color: #e69db8;
-  margin: 10px auto 0;
-  border-radius: 4px;
-}
+
 
 #menu .vegan-text {
-  font-size: 25px;
+  font-size: 24px;
   text-align: left;
   color: black;
-  margin-top: 100px;
-  font-family: "Give You Glory", cursive;
-}
+  margin-top: 85px;
+font-family: "Poiret One", sans-serif;}
 
 #menu .veganButton {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #e69db8;
+  color: black;
   border: 1px solid #e69db8;
   border-radius: 8px;
   margin-top: 20px;
   cursor: pointer;
+  font-family: "Poiret One", sans-serif;
 }
 
 #menu .veganButton:hover {
@@ -1104,4 +1088,6 @@ h5:not(.card-title) {
   width: 100%;
   height: auto;
   max-width: 350px;
+  border-radius: 100%;
 }
+

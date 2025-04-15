@@ -65,7 +65,7 @@ cake3.addEventListener("click", function () {
   switchCake(cake3);
 });
 
-//this the seeMore button
+//this is the seeMore button
 //when you click it, it opens the MenuPage
 var viewMoreButton = document.getElementById("viewMoreButton");
 

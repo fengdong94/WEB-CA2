@@ -7,22 +7,22 @@ contactButton.addEventListener("click", function () {
 
 // THIS IS MY GALLERY
 // GET ALL THE ELEMENT
-let showMoreBtn = document.getElementById("showMoreBtn");
-let showLessBtn = document.getElementById("showLessBtn");
+let showMoreButton = document.getElementById("showMoreButton");
+let showLessButton = document.getElementById("showLessButton");
 let extraGallery = document.getElementById("extra-gallery");
 
 //WHEN CLICKS ON SEE MORE
-showMoreBtn.addEventListener("click", function () {
+showMoreButton.addEventListener("click", function () {
   extraGallery.classList.remove("d-none"); // SHOW THE CARDS
-  showMoreBtn.classList.add("d-none"); //HIDE THE SEE MORE BTN
-  showLessBtn.classList.remove("d-none"); // SHOW THE SEE LESSBTN
+  showMoreButton.classList.add("d-none"); //HIDE THE SEE MORE BTN
+  showLessButton.classList.remove("d-none"); // SHOW THE SEE LESSBTN
 });
 
 // WHEN CLICKS ON SEE LESS
-showLessBtn.addEventListener("click", function () {
+showLessButton.addEventListener("click", function () {
   extraGallery.classList.add("d-none"); // HIDE THE EXTRAS CARDS
-  showMoreBtn.classList.remove("d-none"); //DISPLAY SEE MORE BTN
-  showLessBtn.classList.add("d-none"); // HIDE THE LESS BTN
+  showMoreButton.classList.remove("d-none"); //DISPLAY SEE MORE BTN
+  showLessButton.classList.add("d-none"); // HIDE THE LESS BTN
 });
 
 // GET ALL THE CARDS
@@ -31,6 +31,7 @@ let cards = document.querySelectorAll(".dessert-card");
 // WHEN THE MOUSE IS IN AND OUT
 cards.forEach(function (card) {
   card.addEventListener("mouseenter", function () {
+    //when the moyseover the card, adds the hover effetc
     card.classList.add("hovered"); //
   });
 
@@ -67,9 +68,9 @@ cards.forEach(function (card) {
 // CLOSES WHEN CLICK  "X"
 lightboxClose.addEventListener("click", function () {
   lightbox.classList.add("d-none"); // HIDE THE lightbox
-  lightboxImg.src = "";
-  lightboxTitle.textContent = "";
-  lightboxText.textContent = "";
+  lightboxImg.src = ""; //clean the image
+  lightboxTitle.textContent = ""; //clean the title
+  lightboxText.textContent = ""; //clean the text
 });
 
 // CLOSE LIGHTBOX WHEN CLICKS OUTSIDE THE IMAGE
