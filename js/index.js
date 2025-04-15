@@ -1,16 +1,16 @@
+//------- @author Carolina
 // Reviews shown in the carousel (one-by-one)
 const reviews = [
-  "It tasted just like my grandma’s baking... maybe even better (sorry, Abuela😅). The apple pie was warm, flaky, and pure magic. I’ll be back for the macarons next!",
-  "I ordered a custom vegan chocolate cake for my girlfriend’s birthday. She cried. I cried. It was that good. CakeZilla doesn’t just bake, they create memories.",
-  "Everything was SO CUTE and delicious! The macarons were soft, colorful, and perfect with my matcha latte. I didn’t want to eat them... but I did. And I’m glad I did.",
-  "The staff is lovely, the flavors are insane, and every bite feels like a hug. The pecan pie reminded me of holidays with my Nana. Thank you for the sweetness, CakeZilla!",
+  "It tasted just like my grandma’s baking... maybe even better (sorry, Abuela😅). The apple pie was warm, flaky, and pure magic. I’ll be back for the macarons next! -Jessica Q.",
+  "I ordered a custom vegan chocolate cake for my girlfriend’s birthday. She cried. I cried. It was that good. CakeZilla doesn’t just bake, they create memories. -Niall H.",
+  "Everything was SO CUTE and delicious! The macarons were soft, colorful, and perfect with my matcha latte. I didn’t want to eat them... but I did. And I’m glad I did. -James B.",
+  "The staff is lovely, the flavors are insane, and every bite feels like a hug. The pecan pie reminded me of holidays with my Nana. Thank you for the sweetness, CakeZilla! -Michael C.",
   "I ordered the apple pie for an office party, and it was the star of the show!! After experiencing the deliciousness nobody asked for a raise, it saved the business!🤑 So much money I can now afford my yacht payments🚢⚓. Thank you for the staff and capitalism💸📈 - Alejandro de la Cruz",
 ];
 
 let currentIndex = 0;
 
 function showReview() {
-  console.log("xxxxx", reviews, reviews[currentIndex]);
   const reviewBox = document.getElementById("review-display");
   reviewBox.textContent = reviews[currentIndex];
 }

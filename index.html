@@ -75,36 +75,48 @@
       </nav>
     </header>
     <main id="home">
-      <div class="container fluid">
-        <div class="bannerHP row">
-          <div class="c1T col-md-6">
-            <h1 class="title1 mt-5">
-              Welcome to <span class="oneWordT">CakeZilla</span>
-            </h1>
-            <p class="titleDescription">
-              Where every slice is a piece of home. Indulge in our delicious
-              cakes, pies, and macarons made with love and care.
-            </p>
-          </div>
-          <div class="img-homeBanner col-md-6">
-            <img
-              src="images/home/bannerHP.png"
-              alt="welcome"
-              class="applePieHeader"
-            />
+      <div class="bannerHP">
+        <div class="container">
+          <div class="row">
+            <div class="c1T col-md-6">
+              <h1 class="title1 mt-5">
+                Welcome to <span class="oneWordT">CakeZilla</span>
+              </h1>
+              <p class="titleDescription">
+                Where every slice is a piece of home. Indulge in our delicious
+                cakes, pies, and macarons made with love and care.
+              </p>
+            </div>
+            <div class="img-homeBanner col-md-6">
+              <img
+                src="images/home/bannerHP.png"
+                alt="welcome"
+                class="applePieHeader"
+              />
+            </div>
           </div>
         </div>
+      </div>
+      <div class="wave">
+        <img
+          src="images/home/unnamed.png"
+          alt="wave"
+          class="waveImg"
+        />
+      </div>
+      <div class="container fluid">
+        
 
         <!--block 2-->
 
         <h2 class="subtitleHome">Feature Products</h2>
         <div
           id="myCarousel"
-          class="carousel slide container"
+          class="carousel slide rounded-4"
           data-ride="carousel"
         >
           <!-- Wrapper for slides -->
-          <div class="carousel-inner">
+          <div class="carousel-inner rounded-4">
             <div class="item active">
               <img src="images/home/fp1.jpg" alt="featureProduct" />
               <div class="carousel-caption text-center">
@@ -211,11 +223,11 @@
         <div class="review container fluid">
           <div class="review-box col-md-6">
             <h2 class="subtitleHome mt-5">Reviews</h2>
-            <div id="reviews-display" class="review-box"></div>
+            <div id="review-display" class="review-box">It tasted just like my grandma’s baking... maybe even better (sorry, Abuela😅). The apple pie was warm, flaky, and pure magic. I’ll be back for the macarons next! -Jessica Q.</div>
 
             <div class="buttons">
-              <button onclick="previousReviews()">Previous</button>
-              <button onclick="nextReviews()">Next</button>
+              <button onclick="previousReview()">Previous</button>
+              <button onclick="nextReview()">Next</button>
             </div>
             <form id="review-form">
               <h3>Add your review</h3>
