@@ -292,7 +292,7 @@ h5:not(.card-title) {
   align-items: center;
 }
 
-#home .wave {
+#home .wave-img {
   width: 100%;
 }
 
@@ -448,7 +448,7 @@ h5:not(.card-title) {
   align-items: center;
 }
 
-#vegan .wave {
+#vegan .wave-img {
   width: 100%;
 }
 
@@ -608,7 +608,7 @@ h5:not(.card-title) {
 }
 #about .banner-text span {
   font-family: "Beth ellen";
-  color:#c45f7b;
+  color: #c45f7b;
 }
 #about .banner-text p {
   font-size: 24px;
@@ -624,7 +624,6 @@ h5:not(.card-title) {
   margin-top: 20px;
   cursor: pointer;
   font-family: "Poiret One", sans-serif;
-  
 }
 #about .contact-button:hover {
   background-color: #fce3eb;
@@ -639,10 +638,9 @@ h5:not(.card-title) {
   font-size: 36px;
 }
 
-
 #about .intro-text {
   font-size: 20px;
-  line-height: 2.0;
+  line-height: 2;
   text-align: justify;
   color: black;
   padding: 0 12px;
@@ -717,9 +715,6 @@ h5:not(.card-title) {
   font-family: "Give You Glory";
 }
 
-
-
-
 #about .favorites {
   background-color: white;
 }
@@ -791,7 +786,7 @@ h5:not(.card-title) {
   margin-top: 20px;
   cursor: pointer;
   font-family: "Poiret One", sans-serif;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 #about .view-more-button:hover {
@@ -820,9 +815,7 @@ h5:not(.card-title) {
 
 /* THIS IS MY MENU/GALLERY PAGE  */
 
-
-
-#menu .banner-container{
+#menu .banner-container {
   text-align: left;
   width: 100%;
   background-color: #f1e7e7;
@@ -896,7 +889,6 @@ h5:not(.card-title) {
   font-family: "Give You Glory";
   margin-bottom: 30px;
 }
-
 
 #menu .dessert-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1002,7 +994,8 @@ h5:not(.card-title) {
   word-wrap: break-word;
   margin-top: 15px;
   padding: 0 10px;
-font-family: "Poiret One", sans-serif;}
+  font-family: "Poiret One", sans-serif;
+}
 
 /*close the lightbox */
 #lightbox-close {
@@ -1060,13 +1053,13 @@ font-family: "Poiret One", sans-serif;}
   margin-bottom: 0;
 }
 
-
 #menu .vegan-text {
   font-size: 24px;
   text-align: left;
   color: black;
   margin-top: 85px;
-font-family: "Poiret One", sans-serif;}
+  font-family: "Poiret One", sans-serif;
+}
 
 #menu .veganButton {
   font-size: 16px;
@@ -1090,4 +1083,3 @@ font-family: "Poiret One", sans-serif;}
   max-width: 350px;
   border-radius: 100%;
 }
-
