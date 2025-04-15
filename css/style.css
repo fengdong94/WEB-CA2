@@ -123,6 +123,9 @@ footer {
 #contact .banner-area h1 {
   font-size: 32px;
 }
+#contact .wave-img {
+  width: 100%;
+}
 #contact .address {
   margin: 0;
   background: #f1e7e7;
@@ -197,6 +200,9 @@ h5:not(.card-title) {
 }
 #recipe .banner-area .banner-img {
   width: 64%;
+}
+#recipe .wave-img {
+  width: 100%;
 }
 #recipe .summary {
   font-size: 14px;
