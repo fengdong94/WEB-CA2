@@ -1,6 +1,18 @@
 /*
 *** COMMON (for all pages) ***
 */
+@font-face {
+  font-family: "Poiret One";
+  src: url("../fonts/PoiretOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Beth Ellen";
+  src: url("../fonts/BethEllen-Regular.ttf");
+}
+@font-face {
+  font-family: "Give You Glory";
+  src: url("../fonts/GiveYouGlory-Regular.ttf");
+}
 body {
   display: flex;
   flex-direction: column;
