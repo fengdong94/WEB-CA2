@@ -375,7 +375,6 @@ h5:not(.card-title) {
 
 #home .muffinVegan{
   width: 80%;
-  align-items: right;
   justify-content: center;
 }
 
@@ -625,7 +624,7 @@ h5:not(.card-title) {
 
 #vegan .dessert-card:hover .card-body {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 #vegan .dessert-card .card-title {
@@ -731,7 +730,7 @@ align-items: center;
   margin: 0 auto;
   padding: 24px;
   font-family: "Poiret One", sans-serif;
-  font: size 32px;
+  font-size: 32px;
 }
 #about .banner-text span {
   font-family: "Beth ellen";
@@ -864,7 +863,7 @@ align-items: center;
   width: 350px;
   border-radius: 16px;
   padding: 16px;
-  transition: all 0.2 ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform: scale(0.9);
   z-index: 1;
   box-shadow: 0 4px 12px #d69ade;
@@ -1068,7 +1067,7 @@ align-items: center;
 
 #menu .dessert-card:hover .card-body {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 #menu .dessert-card .card-title {
