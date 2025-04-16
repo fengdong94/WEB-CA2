@@ -65,12 +65,19 @@
     <main id="vegan">
       <div class="bannerV">
         <div class="container">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="text-veganBanner col-md-6">
               <p class="veganBanner-text">
-                Wheather you are vegan, lactose-intolerant, or simply love
-                plant-based treats, we've got something sweet for you! 💚🌱
+                Wheather you are <span class="vegan-lactose">vegan, lactose-intolerant,</span> or simply love
+                <span class="vegan-lactose">plant-based treats, </span>
+                <br>
+                <p>We've got something sweet for you! 💚🌱
               </p>
+              <button
+                  id="contactButton"
+                  class="contact-button" >
+                  <a href="contact.html">Contact Us</a>
+                </button>
             </div>
 
             <div class="img-veganBanner col-md-6">
@@ -90,97 +97,106 @@
           class="wave-img" />
       </div>
        <!--Vegan Gallery-->
-      <div class="featureProd container py-5">
-        <h2 class="text center mb-4">Our Vegan Options</h2>
-        <p class="text-center mb-5">
-          Here you can find some of our Vegan variety options. If you would like
-          something custumized just let us know!
-        </p>
+      <section class="VeganGallery-section"> 
+        <div class="container">
+          <h2 class="text center gallery-title">Our Vegan Desserts</h2>
+          <p class="text-center mb-5">
+            Here you can find some of our Vegan variety options. If you would like
+            something custumized just let us know!
+          </p>
+          
 
-        <div class="row g-4">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="image vegan-img">
-              <img src="../images/vegan/vChocolateCake.webp" alt="Chocolate supreme" class="image-img-top">
-              <div class="image-body">
-                <h5 class="image-title">Chocolate Supreme</h5>
-                <p class="image-text">Rich, bold and totally plant-based.</p>
-              </div>  
+          <div class="row" id="dessert-gallery">
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vChocolateCake.webp" alt="Chocolate supreme" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Supreme</h5>
+                  <p class="card-text">Rich, bold and totally plant-based.</p>
+                </div>  
+              </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="image vegan-img">
-                <img src="../images/vegan/vAppleCake.webp" alt="Almond Glow" class="image-img-top">
-                <div class="image-body">
-                  <h5 class="image-title">Almond Glow</h5>
-                  <p class="image-text">Soft apple cake with a nutty twist.</p>
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vAppleCake.webp" alt="Almond Glow" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Almond Glow</h5>
+                  <p class="card-text">Soft apple cake with a nutty twist.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="image vegan-img">
-                <img src="../images/vegan/vChocolateYuleLog.webp" alt="Vegan Swirl Roll" class="image-img-top">
-                <div class="image-body">
-                  <h5 class="image-title">Vegan Swirl Roll</h5>
-                  <p class="image-text">A festive roll with chocolate love.</p>
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vChocolateYuleLog.webp" alt="Vegan Swirl Roll" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Vegan Swirl Roll</h5>
+                  <p class="card-text">A festive roll with chocolate love.</p>
                 </div>
               </div>
               </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="image vegan-img">
-                <img src="../images/vegan/vPanettone.webp" alt="Plantettone" class="image-img-top">
-                <div class="image-body">
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vPanettone.webp" alt="Plantettone" class="card-img-top">
+                <div class="card-body">
                   <h5 class="card-title">Plantettone</h5>
                   <p class="card-text">Fluffy, fruity, and 100% vegan.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="image vegan-img">
-                <img src="../images/vegan/vPumkinPie.webp" alt="Sugar Moon Pie" class="image-img-top">
-                <div class="image-body">
-                  <h5 class="image-title">Sugar Moon Pie</h5>
-                  <p class="image-text">Pumpkin spice and everything nice.</p>
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vPumkinPie.webp" alt="Sugar Moon Pie" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Sugar Moon Pie</h5>
+                  <p class="card-text">Pumpkin spice and everything nice.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="image vegan-img">
-                <img src="../images/vegan/vRhubarb.webp" alt="Chocolate supreme" class="image-img-top">
-                <div class="image-body">
-                  <h5 class="image-title">Rhubarb Surprise</h5>
-                  <p class="image-text">Tart, sweet, and totally unique.</p>
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vRhubarb.webp" alt="Chocolate supreme" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Rhubarb Surprise</h5>
+                  <p class="card-text">Tart, sweet, and totally unique.</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="image vegan-img">
-                <img src="../images/vegan/vPanDeElote.jpg" alt="Chocolate supreme" class="image-img-top">
-                <div class="image-body">
-                  <h5 class="image-title">Vegan Corn Cake</h5>
-                  <p class="image-text">Sweet and moist corn cake, perfect for any occasion.</p>
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vPanDeElote.jpg" alt="Chocolate supreme" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Vegan Corn Cake</h5>
+                  <p class="card-text">Sweet and moist corn cake, perfect for any occasion.</p>
                 </div> 
               </div>                
             </div>
 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="image vegan-img">
-                <img src="../images/vegan/vTiramisu.jpg" alt="Vegan Tiramisu" class="image-img-top">
-                <div class="image-body">
-                  <h5 class="image-title">Vegan Tiramisu</h>
-                  <p class="image-text">Creamy layers, no dairy in sight.</p>
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/vTiramisu.jpg" alt="Vegan Tiramisu" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Vegan Tiramisu</h>
+                  <p class="card-text">Creamy layers, no dairy in sight.</p>
                 </div> 
               </div>
             </div>
-
+            
+            <div class="col-md-4 mb-4">
+              <div class="card dessert-card">
+                <img src="../images/vegan/coming-soon.png" alt="Vegan Tiramisu" class="card-img-top">
+                </div> 
+              </div>
+            </div>
+           
           </div>
         </div>
-      </div>
-      </div>
+      </section> 
       <!--Recipes for Begginers-->
       <div class="recipeSelect">
         <div class="container">
@@ -198,7 +214,7 @@
         </div>
       </div>
      <!-- Recipes for begginers content images -->
-      <div class="recipeContent">
+      <div class="recipeContent align-items-center">
         <div class="container">
           <div class="row">
             <div class="recipeImg-box col-md-6">
@@ -248,7 +264,7 @@
                   </button>
                 </div>
                 <div id="brownie-ingridients" class="tab-content active">
-                  <h3>Ingredients</h3>
+                  <h3 class="windowFont">Ingredients</h3>
                   <ul id="ingredients-list">
                     <li>3 large bananas</li>
                     <li>1/2 cup cocoa powder</li>
@@ -257,7 +273,7 @@
                 </div>
 
                 <div id="brownie-instructions" class="tab-content">
-                  <h3>Instructions</h3>
+                  <h3 class="windowFont">Instructions</h3>
                   <ol>
                     <li>
                       Preheat the oven to 350 degrees F. Prepare a 8 x 8 inch
@@ -280,6 +296,7 @@
                   </ol>
                 </div>
               </div>
+
               <div class="recipe" id="pBCookies" style="display: none">
                 <div class="tabs">
                   <button
@@ -296,7 +313,7 @@
                   </button>
                 </div>
                 <div id="pBCookies-ingridients" class="tab-content">
-                  <h3>Ingredients</h3>
+                  <h3 class="windowFont">Ingredients</h3>
                   <ul id="ingredients-list">
                     <li>1 cup peanut butter</li>
                     <li>1/2 cup maple syrup</li>
@@ -307,7 +324,7 @@
                 </div>
 
                 <div id="pBCookies-instructions" class="tab-content">
-                  <h3>Instructions</h3>
+                  <h3 class="windowFont">Instructions</h3>
                   <ol>
                     <li>
                       Preheat the oven 325 degrees F. Prepare a baking sheet by
@@ -339,6 +356,41 @@
                   </ol>
                 </div>
               </div>
+
+              <div class="recipe" id="coconut" style="display: none">
+                <div class="tabs">
+                  <button
+                    class="tab-button active"
+                    onclick="showAndHideTab('coconut-ingridients', 'coconut-instructions')"
+                  >
+                    Ingredients
+                  </button>
+                  <button
+                    class="tab-button"
+                    onclick="showAndHideTab('coconut-instructions', 'coconut-ingridients')"
+                  >
+                    Instructions
+                  </button>
+                </div>
+                <div id="coconut-ingridients" class="tab-content">
+                  <h3 class="windowFont">Ingredients</h3>
+                  <ul id="ingredients-list">
+                    <li>1 cup packed, soft pitted dates</li>
+                    <li>1 cup raw cashews</li>
+                    <li>3/4 cup unsweetened shredded coconut</li>
+                    <li>1/4 teaspoon sea salt</li>
+                  </ul>
+                </div>  
+
+                <div id="coconut-instructions" class="tab-content">
+                  <h3 class="windowFont">Instructions</h3>
+                  <ol>
+                    <li>1.Add all of the ingredients to a food processor and process into a thick, sticky dough you can press between your fingers.</li>
+                    <li>2.Use your hands to roll the dough into 15 balls.</li>
+                  </ol>
+                </div>
+            </div>
+
               <div class="recipe" id="pbBanana" style="display: none">
                 <div class="tabs">
                   <button
@@ -355,7 +407,7 @@
                   </button>
                 </div>
                 <div id="pbBanana-ingridients" class="tab-content">
-                  <h3>Ingredients</h3>
+                  <h3 class="windowFont">Ingredients</h3>
                   <ul id="ingredients-list">
                     <li>2 cups quick oats</li>
                     <li>2 medium ripe bananas</li>
@@ -368,7 +420,7 @@
                 </div>
 
                 <div id="pbBanana-instructions" class="tab-content">
-                  <h3>Instructions</h3>
+                  <h3 class="windowFont">Instructions</h3>
                   <ol>
                     <li>Pre-heat oven to 350 F.</li>
                     <li>

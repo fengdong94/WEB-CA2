@@ -3,7 +3,7 @@
 const reviews = [
   "It tasted just like my grandma’s baking... maybe even better (sorry, Abuela😅). The apple pie was warm, flaky, and pure magic. I’ll be back for the macarons next! -Jessica Q.",
   "I ordered a custom vegan chocolate cake for my girlfriend’s birthday. She cried. I cried. It was that good. CakeZilla doesn’t just bake, they create memories. -Niall H.",
-  "Everything was SO CUTE and delicious! The macarons were soft, colorful, and perfect with my matcha latte. I didn’t want to eat them... but I did. And I’m glad I did. -James B.",
+  "Everything was sooooo cute and delicious! The doughnuts were soft, colorful, and perfect with my matcha latte. I didn’t want to eat them... but I did. And I’m glad I did. -James B.",
   "The staff is lovely, the flavors are insane, and every bite feels like a hug. The pecan pie reminded me of holidays with my Nana. Thank you for the sweetness, CakeZilla! -Michael C.",
   "I ordered the apple pie for an office party, and it was the star of the show!! After experiencing the deliciousness nobody asked for a raise, it saved the business!🤑 So much money I can now afford my yacht payments🚢⚓. Thank you for the staff and capitalism💸📈 - Alejandro de la Cruz",
 ];
@@ -25,16 +25,6 @@ function previousReview() {
   showReview();
 }
 
-document.getElementById("review-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const newReview = document.getElementById("new-review").value.trim();
-  if (newReview !== "") {
-    reviews.push(newReview);
-    currentIndex = reviews.length - 1;
-    showReview();
-    document.getElementById("new-review").value = "";
-  }
-});
 
 //
 // showReview();
@@ -75,8 +65,38 @@ function showResult() {
     question3 === "vanilla"
   ) {
     cakeType = "Brazilian Manjar🍮";
+  } else if (
+    question1 === "adventurous" &&
+    question2 === "dancing" &&
+    question3 === "chocolate"
+  ) {
+    cakeType = "Brownies";
+  } else if (
+    question1 === "creative" &&
+    question2 === "reading" &&
+    question3 === "strawberry"
+  ) {
+    cakeType = "Classic Cheesecake";
+  } else if (
+    question1 === "funny" &&
+    question2 === "adventures" &&
+    question3 === "lemon"
+  ) {
+    cakeType = "Brazilian Manjar";
+  } else if (
+    question1 === "thoughtful" &&
+    question2 === "baking" &&
+    question3 === "vanilla"
+  ) {
+    cakeType = "Cupcake🧁";
+  } else if (
+    question1 === "creative" &&
+    question2 === "baking" &&
+    question3 === "chocolate"
+  ) {
+    cakeType = "Orange Cake";
   } else {
     cakeType = "Doughnut🍩";
   }
-  result.textContent = "Your cake type is: " + cakeType;
+  result.textContent = "Your cake type is a: " + cakeType;
 }

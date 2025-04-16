@@ -272,12 +272,13 @@ h5:not(.card-title) {
 .titleDescription,
 .title1,
 .veganAllergy,
-.questions,
 .contactUs,
-.quizInstructions {
+.quizInstructions,
+.carouselTextShadow {
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
 }
 
 #home h2,
@@ -285,7 +286,7 @@ h5:not(.card-title) {
   font-family: "Give You Glory", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 32px;
   color: #c45f7b;
 }
 
@@ -294,25 +295,33 @@ h5:not(.card-title) {
   color: #c45f7b;
 }
 
+/*Home Page Banner*/
 #home .bannerHP {
   background-color: #f1e7e7;
   width: 100%;
-  padding: 60px 0;
+  padding: 20px 0 0 0;
   text-align: center;
-  align-items: center;
 }
 
+#home .carouselTextShadow{
+ text-shadow: 2px 2px 5px black;
+}
 #home .wave-img {
   width: 100%;
 }
 
 #home .applePieHeader {
-  width: 80%;
+  width: 70%;
 }
 
+/*Home Page Carousel*/
 #myCarousel {
   overflow: hidden;
 }
+#myCarousel button {
+  background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
 #myCarousel .carousel-inner img {
   width: 100%;
   height: 400px;
@@ -325,12 +334,12 @@ h5:not(.card-title) {
 }
 
 #home .titleDescription {
-  font-size: 30px;
+  font-size: 24px;
   align-items: center;
   justify-content: center;
 }
 #home .subtitleHome {
-  font-size: 30px;
+  font-size: 32px;
   color: #c45f7b;
   text-align: center;
   margin-top: 50px;
@@ -341,46 +350,70 @@ h5:not(.card-title) {
   font-size: 24px;
 }
 
+/*Home Page vegan section*/
+#home .veganAllergy{
+  margin: 60px 0;
+}
+
+#home .muffinVegan{
+  width: 80%;
+  align-items: right;
+  justify-content: center;
+}
+
+#home .vegan-button {
+  font-size: 16px;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #e69db8;
+  border-radius: 8px;
+  font-family: "Poiret One", sans-serif;
+}
+
+#home .vegan-button:hover {
+  background-color: #fce3eb;
+}
+
+/*Review - Quiz*/
 #home .review.container {
   background-color: #f1e7e7;
   border-radius: 15px;
   padding: 30px;
   margin: 40px auto;
   box-shadow: 0 4px 12px #f1e7e7;
-}
-
-#home .review-box {
+  font-family: "Poiret One", sans-serif;
   font-style: italic;
-  font-size: 20px;
-  padding: 20px;
-  background-color: #f1e7e7;
-  border-radius: 8px;
-  min-height: 100px;
-  /**box-shadow: 0 4px 12px #d69ade;**/
-  margin-bottom: 15px;
-  transition: all 0.3s ease;
+  font-size: 24px;
 }
 
 #home .buttons {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 16px;
+  color: black;
 }
 
+#home .buttonsRQC{
+  border: 1px solid #e69db8;
+}
+/*go to contact us button*/
 #home button {
-  background-color: #ffe3ec;
-  color: white;
-  border: none;
+  background-color: #ffffff;
+  color: black;
   border-radius: 8px;
   padding: 10px 16px;
   cursor: pointer;
   font-weight: bold;
+  font-family: "Poiret One", sans-serif;
 }
 
 #home button:hover {
-  background-color: #de5d83;
+  background-color: #fce3eb;
 }
 
+/*Cake Personality Test Quiz*/
 #home form textarea {
+  font-family: "Poiret One", sans-serif;
   width: 100%;
   height: 80px;
   border-radius: 8px;
@@ -394,21 +427,25 @@ h5:not(.card-title) {
 }
 
 #home form button[type="submit"]:hover {
-  background-color: #de5d83;
+  background-color: #fce3eb;
 }
 
 #home .cakeQuiz {
-  background-color: #f1e7e7;
-  max-width: 500px;
+  background-color: #ffffff;
   border-radius: 15px;
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 4px 12px #d69ade;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px #fce3eb ;
 }
 
 #home .questions {
+  font-family: "Poiret One", sans-serif;
+  font-size: 20px;
   margin: 15px 0;
+}
+
+#home .quizInstructions, .quizTitle {
+  text-align: center;
 }
 
 #home .questions label {
@@ -427,6 +464,7 @@ h5:not(.card-title) {
   margin-top: 20px;
   font-weight: bold;
   text-align: center;
+  font-size: 24px;
 }
 
 #home .contactUs {
@@ -436,11 +474,11 @@ h5:not(.card-title) {
 
 /**FONTS Vegan**/
 
-#vegan p {
+#vegan p, .windowFont, li {
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 #vegan h2 {
@@ -448,62 +486,98 @@ h5:not(.card-title) {
   font-weight: 400;
   font-style: normal;
   color: #c45f7b;
+  font-size: 34px;
 }
-/*banner*/
+/*vegan banner*/
 #vegan .bannerV {
   background-color: #f1e7e7;
   width: 100%;
-  padding: 60px 0;
-  text-align: center;
-  align-items: center;
+  padding: 60px 0 0 0;
+  text-align: left;
+  align-items:center;
 }
 
 #vegan .wave-img {
   width: 100%;
 }
-
+  /*Image of pie*/
 #vegan .pie {
   width: 60%;
+  margin-left: 130px;
 }
 
 #vegan h2 {
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
   margin-top: 50px;
 }
+#vegan .veganBanner-text{
+  font-size: 40px;
+}
+#vegan .vegan-lactose{
+  font-size: 40px;
+  color: #c45f7b;
+}
+/*button*/
+#vegan .contact-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #e69db8;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "Poiret One", sans-serif;
+}
+
+#vegan .contact-button:hover {
+  background-color: #fce3eb;
+}
 /*vegan gallery*/
 
-#vegan .vegan-img {
+#vegan .dessert-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   border: none;
   position: relative;
+  /* allows text on top of image*/
 }
 
-#vegan .vegan-img:hover {
+/*#vegan .dessert-card:hover {
   transform: scale(1.03);
   box-shadow: 0 10px 20px #999;
-}
+}*/
 
-#vegan .vegan-img img {
-  height: 200px;
+#vegan .dessert-card img {
+  width: 100%;
+  height: 180px;
   object-fit: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   border-bottom: 1px solid #eee;
   transition: transform 0.3s ease;
 }
 
-#vegan .vegan-img:hover img {
+#vegan .dessert-card:hover img {
   transform: scale(1.05);
+  /* zoom effect using hoover */
 }
 
-#vegan .vegan-img .card-body {
+#vegan .dessert-card {
+  position: relative;
+  overflow: hidden;
+}
+
+#vegan .dessert-card .card-body {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #000000cc;
+  /* /black transparent/ */
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -514,27 +588,34 @@ h5:not(.card-title) {
   pointer-events: none;
 }
 
-#vegan .vegan-img:hover .image-body {
+#vegan .dessert-card:hover .card-body {
   opacity: 1;
   pointer-events: auto;
 }
 
-#vegan .vegan-img .image-title {
+#vegan .dessert-card .card-title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 8px;
   color: white;
+  font-family: "Poiret One", sans-serif;
 }
 
-#vegan .vegan-img .image-text {
-  color: #ffb6c1;
-  font-size: 14px;
+#vegan .dessert-card:hover .card-text {
+  color: #ff69b4;
+  transform: translateY(-2px);
+  font-family: "Poiret One", sans-serif;
+  font-size: 18px;
 }
 
-#vegan h1 {
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #333;
+/*Easy vegan recipes*/
+#vegan .recipeContent{
+  margin-bottom: 40px;
+}
+
+#vegan .recipeImg{
+align-items: center;
+
 }
 
 #vegan .recipeSelect {
@@ -546,13 +627,13 @@ h5:not(.card-title) {
   padding: 8px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #f1e7e7;
 }
 
 #vegan .recipe {
   max-width: 600px;
   margin: 20px auto;
-  border: 1px solid #ddd;
+  border: 1px solid #f1e7e7;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -560,33 +641,33 @@ h5:not(.card-title) {
 }
 
 #vegan .recipe-img {
-  width: 80%;
+  width: 60%;
   align-items: center;
 }
 
 #vegan .tabs {
   display: flex;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #f1e7e7;
 }
-
+/*buttons from content recipes box*/
 #vegan .tab-button {
   flex: 1;
   padding: 15px;
   background-color: #f9f9f9;
   border: none;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: bold; 
   transition: background-color 0.3s;
 }
 
 #vegan .tab-button:hover {
   background-color: #ffd0c7;
 }
-
+/*pick a recipe small menu*/
 #vegan .recipeSelect {
   display: flex;
 }
-
+/*content from each recipe*/
 #vegan .tab-content {
   display: none;
   padding: 20px;
@@ -790,7 +871,7 @@ h5:not(.card-title) {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
-  color: #black;
+  color: black;
   border: 1px solid #e69db8;
   border-radius: 8px;
   margin-top: 20px;

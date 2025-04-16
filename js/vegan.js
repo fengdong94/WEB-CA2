@@ -1,16 +1,17 @@
-// gallery 
-let images = document.querySelectorAll(".gallery-image");
+//-- @author Carolina --//
+// gallery
+let image = document.querySelectorAll(".gallery-image");
 
 image.forEach(function (image) {
   image.addEventListener("mouseenter", function () {
     image.classList.add("hovered");
-  }
+  });
 
   image.addEventListener("mouseleave", function () {
     image.classList.remove("hovered");
   });
 });
-// Easy recipes 
+// Easy recipes
 function changeRecipe() {
   const selected = document.getElementById("recipeSelect").value;
   const recipes = document.querySelectorAll(".recipe");
@@ -28,7 +29,7 @@ function changeRecipe() {
     tabs.forEach((tab) => tab.classList.remove("active"));
     contents.forEach((content) => content.classList.remove("active"));
   });
-    // Change recipe image
+  // Change recipe image
   recipeImg.forEach((recipe) => {
     console.log(recipe.style.display, recipe.id, selected);
     recipe.style.display = recipe.id === selected + "Img" ? "block" : "none";
