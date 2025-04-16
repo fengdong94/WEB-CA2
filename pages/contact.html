@@ -326,6 +326,50 @@
       </div>
     </main>
     <footer>© 2025 CakeZilla. All rights reserved.</footer>
+    <div class="mini-game position-fixed" title="Play a minigame to get discount!" onclick="showMinigame()">
+      <img src="../images/common/gift_box.svg" alt="minigame img" class="img-fluid">
+    </div>
+    <div
+      id="minigame-popup"
+      class="popup d-flex justify-content-center align-items-center"
+    >
+      <div class="popup-content p-4">
+        <p class="text-center popup-title">
+          🎯 Guess which box has the cake!
+        </p>
+        <button
+          onclick="closeMinigame()"
+          type="button"
+          class="btn-close popup-close"
+        ></button>
+        <div class="row">
+          <div class="col text-center">
+            <img
+              onclick="guessCake(0)"
+              src="../images/common/gift_box.svg"
+              alt="cake img"
+              class="gift-img"
+            >
+          </div>
+          <div class="col text-center">
+            <img
+              onclick="guessCake(1)"
+              src="../images/common/gift_box.svg"
+              alt="cake img"
+              class="gift-img"
+            >
+          </div>
+          <div class="col text-center">
+            <img
+              onclick="guessCake(2)"
+              src="../images/common/gift_box.svg"
+              alt="cake img"
+              class="gift-img"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/contact.js"></script>

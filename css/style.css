@@ -120,6 +120,24 @@ footer {
   font-family: "Poiret One";
 }
 
+.mini-game {
+  width: 48px;
+  background: #fff;
+  z-index: 899;
+  padding: 10px;
+  bottom: 120px;
+  right: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px #fce3eb;
+  cursor: pointer;
+}
+.mini-game img {
+  transition: all 0.5s;
+}
+.mini-game:hover img {
+  transform: scale(1.1);
+}
+
 /*
 *** @author DONG ***
 */
