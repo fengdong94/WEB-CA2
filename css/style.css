@@ -472,9 +472,26 @@ h5:not(.card-title) {
   text-align: center;
 }
 
+#home .hpContact-button{
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #e69db8;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: "Poiret One", sans-serif;
+}
+
+#home .hpContact-button:hover {
+  background-color: #fce3eb;
+}
+
+
 /**FONTS Vegan**/
 
-#vegan p, .windowFont, li {
+#vegan p, .windowFont, li, .recipe-label{
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -519,7 +536,7 @@ h5:not(.card-title) {
   color: #c45f7b;
 }
 /*button*/
-#vegan .contact-button {
+#vegan .vcontact-button {
   font-size: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
@@ -531,7 +548,7 @@ h5:not(.card-title) {
   font-family: "Poiret One", sans-serif;
 }
 
-#vegan .contact-button:hover {
+#vegan .vcontact-button:hover {
   background-color: #fce3eb;
 }
 /*vegan gallery*/
@@ -643,6 +660,7 @@ align-items: center;
 #vegan .recipe-img {
   width: 60%;
   align-items: center;
+  margin-left: 120px;
 }
 
 #vegan .tabs {

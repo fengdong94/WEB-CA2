@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vegan Options</title>
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
   </head>
 
   <body>
@@ -13,11 +13,7 @@
       class="px-4 d-flex justify-content-between align-items-center py-2 position-sticky top-0"
     >
       <a href="../index.html" class="logo-brand d-flex align-items-center">
-        <img
-          src="../images/common/logo.png"
-          class="logo"
-          alt="This is a logo image"
-        />
+        <img src="../images/common/logo.png" class="logo" alt="This is a logo image">
         <div>
           <div class="brand">CakeZilla</div>
           <div class="slogan mt-1">Cake That Feels Like Home</div>
@@ -68,33 +64,22 @@
           <div class="row align-items-center">
             <div class="text-veganBanner col-md-6">
               <p class="veganBanner-text">
-                Wheather you are <span class="vegan-lactose">vegan, lactose-intolerant,</span> or simply love
-                <span class="vegan-lactose">plant-based treats, </span>
-                <br>
-                <p>We've got something sweet for you! 💚🌱
+              Wheather you are <span class="vegan-lactose">vegan, lactose-intolerant,</span> or simply love
+              <span class="vegan-lactose">plant-based treats, </span>
+              <br>
+              <p>We've got something sweet for you! 💚🌱
               </p>
-              <button
-                  id="contactButton"
-                  class="contact-button" >
-                  <a href="contact.html">Contact Us</a>
-                </button>
+              <a href="contact.html" id="vcontactButton" class="vcontact-button btn btn-primary">Contact Us</a>
             </div>
 
             <div class="img-veganBanner col-md-6">
-              <img
-                src="../images/vegan/vegan-banner.png"
-                alt="featured pie"
-                class="pie"
-              />
+              <img src="../images/vegan/vegan-banner.png" alt="featured pie" class="pie">
             </div>
           </div>
         </div>
       </div>
       <div class="wave">
-        <img
-          src="../images/vegan/unnamed.png"
-          alt="wave decoration"
-          class="wave-img" />
+        <img src="../images/vegan/unnamed.png" alt="wave decoration" class="wave-img">
       </div>
        <!--Vegan Gallery-->
       <section class="VeganGallery-section"> 
@@ -181,7 +166,7 @@
               <div class="card dessert-card">
                 <img src="../images/vegan/vTiramisu.jpg" alt="Vegan Tiramisu" class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">Vegan Tiramisu</h>
+                  <h5 class="card-title">Vegan Tiramisu</h5>
                   <p class="card-text">Creamy layers, no dairy in sight.</p>
                 </div> 
               </div>
@@ -190,7 +175,6 @@
             <div class="col-md-4 mb-4">
               <div class="card dessert-card">
                 <img src="../images/vegan/coming-soon.png" alt="Vegan Tiramisu" class="card-img-top">
-                </div> 
               </div>
             </div>
            
@@ -205,7 +189,7 @@
           
           <!-- Recipes for begginers select dropdown -->  
           <label for="recipeSelect" class="recipe-label">Pick a recipe:</label>
-          <select id="recipeSelect" onchange="changeRecipe()">
+          <select id="recipeSelect" onchange="changeRecipe()" class="recipe-label">
             <option value="brownie">Brownies</option>
             <option value="pBCookies">Peanut Butter Cookies</option>
             <option value="coconut">Cashew Coconut Balls</option>
@@ -218,33 +202,28 @@
         <div class="container">
           <div class="row">
             <div class="recipeImg-box col-md-6">
-              <img
-                src="../images/vegan/vBrownie1.png"
-                alt="Brownies"
-                class="recipe-img"
-                id="brownieImg"
-              />
+              <img src="../images/vegan/vBrownie1.png" alt="Brownies" class="recipe-img" id="brownieImg">
               <img
                 src="../images/vegan/vPBCookies1.png"
                 alt="pBCookies"
                 class="recipe-img"
                 id="pBCookiesImg"
                 style="display: none"
-              />
+              >
               <img
                 src="../images/vegan/vCoconut1.png"
                 alt="coconut"
                 class="recipe-img"
                 id="coconutImg"
                 style="display: none"
-              />
+              >
               <img
                 src="../images/vegan/vPBBOatmeal1.png"
                 alt="pbBanana"
                 class="recipe-img"
                 id="pbBananaImg"
                 style="display: none"
-              />
+              >
             </div>
             <!-- Recipes for begginers content -->
             <div class="recipeContent-box col-md-6">
@@ -265,7 +244,7 @@
                 </div>
                 <div id="brownie-ingridients" class="tab-content active">
                   <h3 class="windowFont">Ingredients</h3>
-                  <ul id="ingredients-list">
+                  <ul id="ingredients-list-brownie">
                     <li>3 large bananas</li>
                     <li>1/2 cup cocoa powder</li>
                     <li>1 1/2 cups raw almond butter</li>
@@ -314,7 +293,7 @@
                 </div>
                 <div id="pBCookies-ingridients" class="tab-content">
                   <h3 class="windowFont">Ingredients</h3>
-                  <ul id="ingredients-list">
+                  <ul id="ingredients-list-pbCookies">
                     <li>1 cup peanut butter</li>
                     <li>1/2 cup maple syrup</li>
                     <li>1 teaspoon vanilla</li>
@@ -374,7 +353,7 @@
                 </div>
                 <div id="coconut-ingridients" class="tab-content">
                   <h3 class="windowFont">Ingredients</h3>
-                  <ul id="ingredients-list">
+                  <ul id="ingredients-list-coconut">
                     <li>1 cup packed, soft pitted dates</li>
                     <li>1 cup raw cashews</li>
                     <li>3/4 cup unsweetened shredded coconut</li>
@@ -408,7 +387,7 @@
                 </div>
                 <div id="pbBanana-ingridients" class="tab-content">
                   <h3 class="windowFont">Ingredients</h3>
-                  <ul id="ingredients-list">
+                  <ul id="ingredients-list-pbBanana">
                     <li>2 cups quick oats</li>
                     <li>2 medium ripe bananas</li>
                     <li>1/2 cup natural peanut butter</li>

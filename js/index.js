@@ -94,7 +94,31 @@ function showResult() {
     question2 === "baking" &&
     question3 === "chocolate"
   ) {
-    cakeType = "Orange Cake";
+    cakeType = "Orange Cake🍊";
+  } else if (
+    question1 === "adventurous" &&
+    question2 === "baking" &&
+    question3 === "chocolate"
+  ) {
+    cakeType = "Harry Potter's Birthday Cake 🎂🧙";
+  } else if (
+    question1 === "funny" &&
+    question2 === "baking" &&
+    question3 === "strawberry"
+  ) {
+    cakeType = "Red Velvet Cake";
+  } else if (
+    question1 === "thoughtful" &&
+    question2 === "dancing" &&
+    question3 === "vanilla"
+  ) {
+    cakeType = "Almond Cake";
+  } else if (
+    question1 === "creative" &&
+    question2 === "adventures" &&
+    question3 === "strawberry"
+  ) {
+    cakeType = "Piñata Cake🪅";
   } else {
     cakeType = "Doughnut🍩";
   }
