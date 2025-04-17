@@ -217,7 +217,7 @@ h4,
 h5:not(.card-title) {
   font-family: "Give You Glory";
   color: #c45f7b;
-  text-align: center;
+  text-align: left;
 }
 #recipe .banner-area {
   background: #f1e7e7;
@@ -859,7 +859,7 @@ align-items: center;
 }
 
 #about .dessert {
-  background-color: #dfb0b0;
+  background-color:#f1e7e7;
   width: 350px;
   border-radius: 16px;
   padding: 16px;
@@ -882,7 +882,7 @@ align-items: center;
 
 #about .dessert.select {
   transform: scale(1.1);
-  background-color: #ffe3ec;
+  background-color: #f1e7e7;
   box-shadow: 0 10px 30px palevioletred;
   z-index: 5;
   opacity: 1;
@@ -945,6 +945,7 @@ align-items: center;
   text-align: left;
   width: 100%;
   background-color: #f1e7e7;
+  padding-top: 16px;
 }
 #menu .banner-img {
   max-width: 90%;
@@ -1082,6 +1083,7 @@ align-items: center;
   color: #ff69b4;
   transform: translateY(-2px);
   font-family: "Poiret One", sans-serif;
+  justify-content: center;
 }
 
 /* Lightbox */

@@ -1,3 +1,4 @@
+// @author LICIA
 // this is the contact button
 var contactButton = document.getElementById("contactButton");
 
