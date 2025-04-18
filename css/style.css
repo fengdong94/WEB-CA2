@@ -149,7 +149,8 @@ footer {
   font-size: 24px;
 }
 #contact .banner-area h1 {
-  font-size: 32px;
+  font-size: 40px;
+  color: #c45f7b;
 }
 #contact .wave-img {
   width: 100%;
@@ -224,7 +225,8 @@ h5:not(.card-title) {
   font-size: 24px;
 }
 #recipe .banner-area h1 {
-  font-size: 32px;
+  font-size: 40px;
+  color: #c45f7b;
 }
 #recipe .banner-area .banner-img {
   width: 64%;
